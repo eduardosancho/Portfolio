@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    align-self: center;
+    width: 60vw;
+    /*border: solid black;*/
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.navbar ul > * {
+    flex: 1;
+    align-items: center;
+    border: solid blue;
+    text-align: center;
+    list-style: none;
+}
