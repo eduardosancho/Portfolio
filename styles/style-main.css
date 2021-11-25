@@ -68,6 +68,17 @@ section {
   margin-left: 150px;
 }
 
+#start-collaboration:hover {
+  background-color: whitesmoke;
+  color: rgb(14, 14, 68);
+}
+
+#start-collaboration:active {
+  background-color: whitesmoke;
+  color: rgb(14, 14, 68);
+  border: solid rgb(14, 14, 68) 2px;
+}
+
 #dots {
   width: 175px;
   height: 175px;
