@@ -2,34 +2,24 @@
 
 # SetUp and Mobile Version Skeleton
 
-
-~~
+~~~
 -Personal Portfolio based on Template #5 of Figma.
 https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=67%3A553
-~~
+~~~
 
 ![screenshot](images/screenshot.png)
 
-Additional description about the project and its features.
 
 ## Built With
 
 - Major languages: HTML and CSS
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
-
 ## Getting Started
 
 
 To get a local copy up and running follow these simple example steps.
 
-1) Clone repository with git clone https://github.com/eduardosancho/setup_and_mobile_version_skeleton.git
-2) Open index.html
+1. Clone repository with git clone https://github.com/eduardosancho/setup_and_mobile_version_skeleton.git
+2. Open index.html
 
 
 
@@ -38,9 +28,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **eduardosancho**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@eduardosancho](https://github.com/eduardosancho)
 
 ## 🤝 Contributing
 
