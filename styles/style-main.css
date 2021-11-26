@@ -54,6 +54,7 @@ section {
 .headline-name {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
+  font-weight: 400;
   margin-top: 50px;
   margin-bottom: 50px;
 }
