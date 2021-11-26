@@ -1,48 +1,27 @@
-body {
+#background-shapes-small {
   background-image: url(../images/mobile_geometry_1.png);
   background-repeat: no-repeat;
+  height: 74px;
+  width: 111px;
 }
 
 .header {
   display: flex;
-  border: solid red;
 }
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.toggleNav {
-  display: block;
-  justify-self: flex-end;
+.toggleNav{
+  padding: 20px;
 }
 
 .navbar ul {
   display: none;
-
-  /* SAVED CONFIG FOR DROP DOWN MENU ITEMS
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  padding-inline-start: 0px;
-  */
-}
-
-.navbar ul li {
-  list-style: none;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.navbar a {
-  justify-self: flex-start;
-  align-self: flex-end;
-  text-decoration: none;
-  font-size: 40px;
 }
 
 main {
@@ -94,10 +73,11 @@ section {
   border: solid rgb(14, 14, 68) 2px;
 }
 
-.headline-last {
-  display: flex;
-}
-
-.headline-last img {
-  flex: 1 1 100%;
+#background-shapes-medium {
+  background-image: url(../images/image_geometry_2.png);
+  background-repeat: no-repeat;
+  height: 160px;
+  width: auto;
+  margin: 0px;
+  margin-top: 10px;
 }
