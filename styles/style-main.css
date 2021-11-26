@@ -84,13 +84,6 @@ section {
   border: solid rgb(14, 14, 68) 2px;
 }
 
-#dots {
-  width: 175px;
-  height: 175px;
-  align-self: flex-end;
-  padding-left: 0;
-}
-
 .headline-last {
   display: block;
 }
