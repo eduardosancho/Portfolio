@@ -101,7 +101,7 @@ h1 {
   height: 50vw;
 }
 
-.project-summary {
+.one .project-summary {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
@@ -109,19 +109,19 @@ h1 {
   padding-inline-start: 20px;
 }
 
-.project-summary p {
+.one .project-summary p {
   flex: 1 1 100%;
   font-size: 20px;
   margin-bottom: 0px;
 }
-.project-summary ul {
+.one .project-summary ul {
   flex: 1 1 100%;
   display: flex;
   justify-content: flex-start;
   gap: 10px;
   padding-inline-start: 0px;
 }
-.project-summary ul li {
+.one .project-summary ul li {
   list-style: none;
   padding: 6px;
   padding-left: 10px;
@@ -132,7 +132,7 @@ h1 {
   color: #1A2236
  }
 
- .button-project {
+ .one .button-project {
    display: flex;
    align-items: center;
    border: solid white;
@@ -142,7 +142,7 @@ h1 {
    height: 44px;
  }
 
- #see-project {
+ .one #see-project {
    display: flex;
    justify-content: space-between;
    align-items: center;
