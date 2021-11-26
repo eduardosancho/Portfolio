@@ -1,0 +1,88 @@
+#background-shapes-small {
+  background-image: url(../images/mobile_geometry_1.png);
+  background-repeat: no-repeat;
+  height: 74px;
+  width: 111px;
+}
+
+.header {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toggleNav {
+  padding: 20px;
+}
+
+.navbar ul {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 16px;
+}
+
+.headline-bio {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 16px;
+}
+
+#start-collaboration {
+  background-color: #1a2236;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 16px;
+}
+
+#start-collaboration:hover {
+  background-color: whitesmoke;
+  color: rgb(14, 14, 68);
+}
+
+#start-collaboration:active {
+  background-color: whitesmoke;
+  color: rgb(14, 14, 68);
+  border: solid rgb(14, 14, 68) 2px;
+}
+
+.headline-last {
+  display: flex;
+  justify-content: stretch;
+  align-content: stretch;
+}
+
+#background-shapes-medium {
+  background-image: url(../images/image_geometry_2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  height: 50vw;
+}
