@@ -2,26 +2,43 @@ body {
   background-image:url(../images/mobile_geometry_1.png);
   background-repeat: no-repeat;
 }
+.header {
+  display: flex;
+}
 
 .navbar {
-  background-color: beige;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggleNav {
+  display: block;
+  justify-self: flex-end;
 }
 
 .navbar ul {
-  width: 40vw;
-  padding: 10px;
+  display: none;
+  /*
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  padding-inline-start: 0px;
+  */
 }
 
 .navbar ul > * {
   list-style: none;
-  text-align: center;
-  font-size: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-a {
+.navbar a {
+  justify-self: flex-start;
+  align-self: flex-end;
   text-decoration: none;
+  font-size: 40px;
 }
 
 main {
