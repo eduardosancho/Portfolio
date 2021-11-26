@@ -4,21 +4,15 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
   background-color: beige;
 }
 
 .navbar ul {
-  display: flex;
-  align-self: center;
   width: 40vw;
   padding: 10px;
-  justify-content: center;
 }
 
 .navbar ul > * {
-  flex: 1 1 25%;
   list-style: none;
   text-align: center;
   font-size: 30px;
@@ -35,13 +29,9 @@ main {
 }
 
 section {
-  display: flex;
 }
 
 .headline-left {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 60%;
 }
 
 .headline-name {
@@ -86,8 +76,4 @@ section {
 
 .headline-last {
   display: block;
-}
-
-#shapes {
-  flex: 0 0 auto;
 }
