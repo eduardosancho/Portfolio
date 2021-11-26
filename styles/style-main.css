@@ -4,11 +4,13 @@ body {
 }
 .header {
   display: flex;
+  border: solid red;
 }
 
 .navbar {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 50px;
 }
 
 .toggleNav {
@@ -18,7 +20,7 @@ body {
 
 .navbar ul {
   display: none;
-  /*
+  /* SAVED CONFIG FOR DROP DOWN MENU ITEMS
   display: flex;
   flex-direction: column;
   align-self: center;
