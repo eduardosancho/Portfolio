@@ -55,6 +55,7 @@ section {
 #start-collaboration {
   background-color: #1a2236;
   color: white;
+  border: solid white;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -86,3 +87,70 @@ section {
   flex: 1;
   height: 50vw;
 }
+
+.one {
+  background-color: #1A2236;
+  color: white;
+}
+
+.one .thumbnail {
+  background-image: url(../images/project_thumbnail_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.project-summary{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding-inline-start: 20px;
+}
+
+.project-summary p {
+  flex: 1 1 100%;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.project-summary ul {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-inline-start: 0px;
+}
+.project-summary ul li {
+  list-style: none;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  background-color: #98DEDE;
+  font-size: 10.33px;
+  color: #1A2236
+ }
+
+ .button-project {
+   display: flex;
+   align-items: center;
+   border: solid white;
+   padding: 0px;
+   padding-right: 5px;
+   margin-bottom: 20px;
+   height: 44px;
+ }
+
+ #see-project {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 12px;
+   background-color: #1a2236;
+   border: #1a2236;
+   color: white;
+
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+ }
