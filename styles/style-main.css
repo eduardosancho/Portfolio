@@ -88,7 +88,8 @@ h1 {
   height: 50vw;
 }
 
-.one {
+.one, 
+.two {
   background-color: #1A2236;
   color: white;
 }
@@ -153,6 +154,13 @@ h1 {
    font-size: 16px;
    font-weight: 500;
  }
+
+.two .thumbnail {
+  background-image: url(../images/project_thumbnail_2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
 
 .about {
   display: flex;
