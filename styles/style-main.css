@@ -38,7 +38,7 @@ section {
   flex-direction: column;
 }
 
-.headline-name {
+h1 {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 400;
@@ -100,7 +100,7 @@ section {
   height: 50vw;
 }
 
-.project-summary{
+.project-summary {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
@@ -149,8 +149,32 @@ section {
    background-color: #1a2236;
    border: #1a2236;
    color: white;
-
    font-family: 'Poppins', sans-serif;
    font-size: 16px;
    font-weight: 500;
  }
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about p {
+  margin: 16px;
+  margin-top: 4px;
+}
+
+#get-my-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #1a2236;
+  border: #1a2236;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 16px;
+}
