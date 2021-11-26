@@ -46,24 +46,27 @@ main {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
 }
 
 .headline-top {
+  display: flex;
+  flex-direction: column;
 }
 
 .headline-name {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 400;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 16px;
 }
 
 .headline-bio {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  margin-bottom: 50px;
+  margin: 16px;
 }
 
 #start-collaboration {
@@ -72,10 +75,8 @@ section {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  padding: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  align-self: flex-start;
+  padding: 20px;
+  margin: 16px;
 }
 
 #start-collaboration:hover {
@@ -90,5 +91,9 @@ section {
 }
 
 .headline-last {
-  display: block;
+  display: flex;
+}
+
+.headline-last > *{
+  flex: 1 1 100%;
 }
