@@ -35,9 +35,8 @@ section {
 }
 
 .headline-name {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
-  font-size: 7em;
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
   margin-left: 150px;
   margin-top: 50px;
   margin-bottom: 50px;
