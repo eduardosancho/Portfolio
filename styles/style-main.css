@@ -31,7 +31,7 @@ body {
   */
 }
 
-.navbar ul > * {
+.navbar ul li {
   list-style: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -98,6 +98,6 @@ section {
   display: flex;
 }
 
-.headline-last > * {
+.headline-last img {
   flex: 1 1 100%;
 }
