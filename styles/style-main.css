@@ -48,7 +48,7 @@ main {
 section {
 }
 
-.headline-left {
+.headline-top {
 }
 
 .headline-name {
@@ -67,7 +67,7 @@ section {
 }
 
 #start-collaboration {
-  background-color: rgb(14, 14, 68);
+  background-color: #1A2236;
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
