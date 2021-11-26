@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.toggleNav{
+.toggleNav {
   padding: 20px;
 }
 
@@ -81,7 +81,7 @@ section {
 
 #background-shapes-medium {
   background-image: url(../images/image_geometry_2.svg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   flex: 1;
   height: 50vw;
