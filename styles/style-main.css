@@ -91,7 +91,8 @@ h1 {
 .one, 
 .two,
 .three,
-.four {
+.four,
+.five {
   background-color: #1A2236;
   color: white;
 }
@@ -110,8 +111,16 @@ h1 {
   height: 50vw;
 }
 
+.five .thumbnail {
+  background-image: url(../images/project_thumbnail_5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
 .one .project-summary,
-.three .project-summary {
+.three .project-summary,
+.five .project-summary {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
@@ -120,14 +129,16 @@ h1 {
 }
 
 .one .project-summary p,
-.three .project-summary p {
+.three .project-summary p,
+.five .project-summary p {
   flex: 1 1 100%;
   font-size: 20px;
   margin-bottom: 0px;
 }
 
 .one .project-summary ul,
-.three .project-summary ul {
+.three .project-summary ul,
+.five .project-summary ul {
   flex: 1 1 100%;
   display: flex;
   justify-content: flex-start;
@@ -136,7 +147,8 @@ h1 {
 }
 
 .one .project-summary ul li,
-.three .project-summary ul li {
+.three .project-summary ul li,
+.five .project-summary ul li {
   list-style: none;
   padding: 6px;
   padding-left: 10px;
@@ -148,7 +160,8 @@ h1 {
  }
 
  .one .button-project,
- .three .button-project {
+ .three .button-project,
+ .five .button-project {
    display: flex;
    align-items: center;
    border: solid white;
@@ -159,7 +172,8 @@ h1 {
  }
 
  .one #see-project,
- .three #see-project {
+ .three #see-project,
+ .five #see-project {
    display: flex;
    justify-content: space-between;
    align-items: center;
