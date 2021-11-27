@@ -179,9 +179,9 @@ h1 {
   height: 44px;
 }
 
-.one #see-project,
-.three #see-project,
-.five #see-project {
+.one #see-project-one,
+.three #see-project-three,
+.five #see-project--five {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -296,9 +296,9 @@ h1 {
   grid-template-rows: 50px 20px;
 }
 
-.two #see-project,
-.four #see-project,
-.six #see-project {
+.two #see-project-two,
+.four #see-project-four,
+.six #see-project-six {
   grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
@@ -338,9 +338,9 @@ h1 {
   margin: 3px;
 }
 
-.two #see-project div,
-.four #see-project div,
-.six #see-project div {
+.two #see-project-two div,
+.four #see-project-four div,
+.six #see-project-six div {
   grid-column: 1/2;
   grid-row: 1/2;
   padding-left: 0;
@@ -349,9 +349,9 @@ h1 {
   padding-top: 8px;
 }
 
-.two #see-project img,
-.four #see-project img,
-.six #see-project img {
+.two #see-project-two img,
+.four #see-project-four img,
+.six #see-project-six img {
   grid-column: 3/4;
   grid-row: 1/2;
   justify-self: right;
