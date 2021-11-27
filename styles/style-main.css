@@ -89,7 +89,8 @@ h1 {
 }
 
 .one, 
-.two {
+.two,
+.three {
   background-color: #1A2236;
   color: white;
 }
@@ -101,7 +102,15 @@ h1 {
   height: 50vw;
 }
 
-.one .project-summary {
+.three .thumbnail {
+  background-image: url(../images/project_thumbnail_3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.one .project-summary,
+.three .project-summary {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
@@ -109,13 +118,15 @@ h1 {
   padding-inline-start: 20px;
 }
 
-.one .project-summary p {
+.one .project-summary p,
+.three .project-summary p {
   flex: 1 1 100%;
   font-size: 20px;
   margin-bottom: 0px;
 }
 
-.one .project-summary ul {
+.one .project-summary ul,
+.three .project-summary ul {
   flex: 1 1 100%;
   display: flex;
   justify-content: flex-start;
@@ -123,7 +134,8 @@ h1 {
   padding-inline-start: 0px;
 }
 
-.one .project-summary ul li {
+.one .project-summary ul li,
+.three .project-summary ul li {
   list-style: none;
   padding: 6px;
   padding-left: 10px;
@@ -134,7 +146,8 @@ h1 {
   color: #1A2236
  }
 
- .one .button-project {
+ .one .button-project,
+ .three .button-project {
    display: flex;
    align-items: center;
    border: solid white;
@@ -144,7 +157,8 @@ h1 {
    height: 44px;
  }
 
- .one #see-project {
+ .one #see-project,
+ .three #see-project {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -157,13 +171,11 @@ h1 {
    font-weight: 500;
  }
 
-
 .two {
   display: grid;
   background-color: #1a2236;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 160px 180px;
-  
 }
 
 .two .thumbnail {
