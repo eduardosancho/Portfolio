@@ -181,7 +181,7 @@ h1 {
 
 .one #see-project-one,
 .three #see-project-three,
-.five #see-project--five {
+.five #see-project-five {
   display: flex;
   justify-content: space-between;
   align-items: center;
