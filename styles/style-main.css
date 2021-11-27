@@ -86,17 +86,17 @@ h1 {
 
 .projects {
   display: grid;
-  grid-template-rows: 99px repeat(6,342px);
-  grid-gap: 0px;
+  grid-template-rows: 99px repeat(6, 342px);
+  grid-gap: 0;
 }
 
-.one, 
+.one,
 .two,
 .three,
 .four,
 .five,
 .six {
-  background-color: #1A2236;
+  background-color: #1a2236;
   color: white;
 }
 
@@ -131,12 +131,17 @@ h1 {
   padding-inline-start: 20px;
 }
 
+.about p {
+  margin: 16px;
+  margin-top: 4px;
+}
+
 .one .project-summary p,
 .three .project-summary p,
 .five .project-summary p {
   flex: 1 1 100%;
   font-size: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .one .project-summary ul,
@@ -146,7 +151,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
 }
 
 .one .project-summary ul li,
@@ -157,37 +162,37 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
   white-space: nowrap;
-  background-color: #98DEDE;
+  background-color: #98dede;
   font-size: 10.33px;
-  color: #1A2236
- }
+  color: #1a2236;
+}
 
- .one .button-project,
- .three .button-project,
- .five .button-project {
-   display: flex;
-   align-items: center;
-   border: solid white;
-   padding: 0px;
-   padding-right: 5px;
-   margin-bottom: 20px;
-   height: 44px;
- }
+.one .button-project,
+.three .button-project,
+.five .button-project {
+  display: flex;
+  align-items: center;
+  border: solid white;
+  padding: 0;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  height: 44px;
+}
 
- .one #see-project,
- .three #see-project,
- .five #see-project {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 12px;
-   background-color: #1a2236;
-   border: #1a2236;
-   color: white;
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   font-weight: 500;
- }
+.one #see-project,
+.three #see-project,
+.five #see-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background-color: #1a2236;
+  border: #1a2236;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .two {
   display: grid;
@@ -229,7 +234,7 @@ h1 {
   grid-column: 1/3;
   grid-row: 2/3;
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 0;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50px 60px 70px;
   font-family: 'Poppins', sans-serif;
@@ -241,7 +246,7 @@ h1 {
 .six .project-summary p {
   grid-column: 1/4;
   grid-row: 1/2;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 20px;
   margin-left: 20px;
 }
@@ -254,7 +259,7 @@ h1 {
   display: grid;
   grid-template-columns: 20px 71px 10px 89px 10px 74px 1fr;
   grid-template-rows: 28px;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
   align-content: center;
 }
 
@@ -264,22 +269,22 @@ h1 {
   list-style: none;
   padding: 10px;
   padding-top: 6px;
-  background-color: #98DEDE;
+  background-color: #98dede;
   font-size: 10.33px;
-  color: #1A2236;
- }
+  color: #1a2236;
+}
 
- #html {
+#html {
   grid-column: 2/3;
- }
+}
 
- #ruby {
+#ruby {
   grid-column: 4/5;
- }
+}
 
- #javascript {
+#javascript {
   grid-column: 6/7;
- }
+}
 
 .two .button-project,
 .four .button-project,
@@ -307,7 +312,30 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  border: solid white;
+}
+
+.knowledge .languages div {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-image: url(../images/ic_languages_mob.png);
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+
+.knowledge .frameworks div {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-image: url(../images/ic_framework.png);
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+
+.knowledge .skills div {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-image: url(../images/ic_skills.png);
+  background-repeat: no-repeat;
+  margin: 3px;
 }
 
 .two #see-project div,
@@ -315,9 +343,9 @@ h1 {
 .six #see-project div {
   grid-column: 1/2;
   grid-row: 1/2;
-  padding-left: 0px;
+  padding-left: 0;
   justify-self: left;
-  align-self:flex-start;
+  align-self: flex-start;
   padding-top: 8px;
 }
 
@@ -334,11 +362,6 @@ h1 {
 .about {
   display: flex;
   flex-direction: column;
-}
-
-.about p {
-  margin: 16px;
-  margin-top: 4px;
 }
 
 #get-my-cv {
@@ -367,7 +390,7 @@ h1 {
   grid-row: 1/2;
   grid-column: 1/2;
   align-self: flex-end;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 800;
@@ -376,9 +399,9 @@ h1 {
 .knowledge .languages {
   grid-row: 1/2;
   grid-column: 1/2;
-  background-color: #1C528A;
+  background-color: #1c528a;
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 0;
   padding-left: 20px;
   grid-template-columns: 1fr 1fr 102px;
   grid-template-rows: 80px 1fr 102px;
@@ -393,21 +416,12 @@ h1 {
   padding-inline-start: 35px;
 }
 
-.knowledge .languages div {
-  grid-row: 3/4;
-  grid-column: 3/4;
-  background-image: url(../images/ic_languages_mob.png);
-  background-repeat: no-repeat;
-  margin: 3px;
-}
-
-
 .knowledge .frameworks {
   grid-row: 2/3;
   grid-column: 1/2;
-  background-color: #E2505C;
+  background-color: #e2505c;
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 0;
   padding-left: 20px;
   grid-template-columns: 1fr 1fr 102px;
   grid-template-rows: 80px 1fr 102px;
@@ -422,21 +436,12 @@ h1 {
   padding-inline-start: 35px;
 }
 
-.knowledge .frameworks div {
-  grid-row: 3/4;
-  grid-column: 3/4;
-  background-image: url(../images/ic_framework.png);
-  background-repeat: no-repeat;
-  margin: 3px;
-}
-
-
-.knowledge .skills{
+.knowledge .skills {
   grid-row: 3/4;
   grid-column: 1/2;
-  background-color: #FEBF52;
+  background-color: #febf52;
   display: grid;
-  grid-gap: 0px;
+  grid-gap: 0;
   padding-left: 20px;
   grid-template-columns: 1fr 1fr 102px;
   grid-template-rows: 80px 1fr 102px;
@@ -449,12 +454,4 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   padding-inline-start: 35px;
-}
-
-.knowledge .skills div {
-  grid-row: 3/4;
-  grid-column: 3/4;
-  background-image: url(../images/ic_skills.png);
-  background-repeat: no-repeat;
-  margin: 3px;
 }
