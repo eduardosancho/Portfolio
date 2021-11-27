@@ -274,15 +274,21 @@ h1 {
   color: #1a2236;
 }
 
-#html {
+#html-two,
+#html-four,
+#html-six {
   grid-column: 2/3;
 }
 
-#ruby {
+#ruby-two,
+#ruby-four,
+#ruby-six {
   grid-column: 4/5;
 }
 
-#javascript {
+#javascript-two,
+#javascript-four,
+#javascript-six {
   grid-column: 6/7;
 }
 
