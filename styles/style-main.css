@@ -92,7 +92,8 @@ h1 {
 .two,
 .three,
 .four,
-.five {
+.five,
+.six {
   background-color: #1A2236;
   color: white;
 }
@@ -211,8 +212,18 @@ h1 {
   height: 50vw;
 }
 
+.six .thumbnail {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url(../images/project_thumbnail_6.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
 .two .project-summary,
-.four .project-summary {
+.four .project-summary,
+.six .project-summary {
   grid-column: 1/3;
   grid-row: 2/3;
   display: grid;
@@ -224,7 +235,8 @@ h1 {
 }
 
 .two .project-summary p,
-.four .project-summary p {
+.four .project-summary p,
+.six .project-summary p {
   grid-column: 1/4;
   grid-row: 1/2;
   margin-bottom: 0px;
@@ -233,7 +245,8 @@ h1 {
 }
 
 .two .project-summary ul,
-.four .project-summary ul {
+.four .project-summary ul,
+.six .project-summary ul {
   grid-column: 1/4;
   grid-row: 2/3;
   display: grid;
@@ -244,7 +257,8 @@ h1 {
 }
 
 .two .project-summary ul li,
-.four .project-summary ul li {
+.four .project-summary ul li,
+.six .project-summary ul li {
   list-style: none;
   padding: 10px;
   padding-top: 6px;
@@ -266,7 +280,8 @@ h1 {
  }
 
 .two .button-project,
-.four .button-project {
+.four .button-project,
+.six .button-project {
   grid-column: 1/4;
   grid-row: 3/4;
   display: grid;
@@ -275,7 +290,8 @@ h1 {
 }
 
 .two #see-project,
-.four #see-project {
+.four #see-project,
+.six #see-project {
   grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
@@ -293,7 +309,8 @@ h1 {
 }
 
 .two #see-project div,
-.four #see-project div {
+.four #see-project div,
+.six #see-project div {
   grid-column: 1/2;
   grid-row: 1/2;
   padding-left: 0px;
@@ -303,7 +320,8 @@ h1 {
 }
 
 .two #see-project img,
-.four #see-project img {
+.four #see-project img,
+.six #see-project img {
   grid-column: 3/4;
   grid-row: 1/2;
   justify-self: right;
