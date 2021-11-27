@@ -84,6 +84,12 @@ h1 {
   height: 50vw;
 }
 
+.projects {
+  display: grid;
+  grid-template-rows: 99px repeat(6,342px);
+  grid-gap: 0px;
+}
+
 .one, 
 .two,
 .three,
