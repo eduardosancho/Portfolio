@@ -24,10 +24,6 @@
   display: none;
 }
 
-main {
-  display: block;
-}
-
 section {
   display: flex;
   flex-direction: column;
