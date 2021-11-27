@@ -90,7 +90,8 @@ h1 {
 
 .one, 
 .two,
-.three {
+.three,
+.four {
   background-color: #1A2236;
   color: white;
 }
@@ -187,7 +188,17 @@ h1 {
   height: 50vw;
 }
 
-.two .project-summary {
+.four .thumbnail {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url(../images/project_thumbnail_4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.two .project-summary,
+.four .project-summary {
   grid-column: 1/3;
   grid-row: 2/3;
   display: grid;
@@ -198,7 +209,8 @@ h1 {
   font-weight: 300;
 }
 
-.two .project-summary p {
+.two .project-summary p,
+.four .project-summary p {
   grid-column: 1/4;
   grid-row: 1/2;
   margin-bottom: 0px;
@@ -206,7 +218,8 @@ h1 {
   margin-left: 20px;
 }
 
-.two .project-summary ul {
+.two .project-summary ul,
+.four .project-summary ul {
   grid-column: 1/4;
   grid-row: 2/3;
   display: grid;
@@ -216,7 +229,8 @@ h1 {
   align-content: center;
 }
 
-.two .project-summary ul li {
+.two .project-summary ul li,
+.four .project-summary ul li {
   list-style: none;
   padding: 10px;
   padding-top: 6px;
@@ -237,7 +251,8 @@ h1 {
   grid-column: 6/7;
  }
 
-.two .button-project {
+.two .button-project,
+.four .button-project {
   grid-column: 1/4;
   grid-row: 3/4;
   display: grid;
@@ -245,7 +260,8 @@ h1 {
   grid-template-rows: 50px 20px;
 }
 
-.two #see-project {
+.two #see-project,
+.four #see-project {
   grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
@@ -262,7 +278,8 @@ h1 {
   border: solid white;
 }
 
-.two #see-project div {
+.two #see-project div,
+.four #see-project div {
   grid-column: 1/2;
   grid-row: 1/2;
   padding-left: 0px;
@@ -270,7 +287,9 @@ h1 {
   align-self:flex-start;
   padding-top: 8px;
 }
-.two #see-project img {
+
+.two #see-project img,
+.four #see-project img {
   grid-column: 3/4;
   grid-row: 1/2;
   justify-self: right;
