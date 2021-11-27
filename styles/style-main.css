@@ -24,10 +24,6 @@
   display: none;
 }
 
-main {
-  display: block;
-}
-
 section {
   display: flex;
   flex-direction: column;
@@ -38,7 +34,7 @@ section {
   flex-direction: column;
 }
 
-.headline-name {
+h1 {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 400;
@@ -55,6 +51,7 @@ section {
 #start-collaboration {
   background-color: #1a2236;
   color: white;
+  border: solid white;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -85,4 +82,382 @@ section {
   background-size: cover;
   flex: 1;
   height: 50vw;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: 99px repeat(6, 342px);
+  grid-gap: 0;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  background-color: #1a2236;
+  color: white;
+}
+
+.one .thumbnail {
+  background-image: url(../images/project_thumbnail_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.three .thumbnail {
+  background-image: url(../images/project_thumbnail_3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.five .thumbnail {
+  background-image: url(../images/project_thumbnail_5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.one .project-summary,
+.three .project-summary,
+.five .project-summary {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding-inline-start: 20px;
+}
+
+.about p {
+  margin: 16px;
+  margin-top: 4px;
+}
+
+.one .project-summary p,
+.three .project-summary p,
+.five .project-summary p {
+  flex: 1 1 100%;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.one .project-summary ul,
+.three .project-summary ul,
+.five .project-summary ul {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-inline-start: 0;
+}
+
+.one .project-summary ul li,
+.three .project-summary ul li,
+.five .project-summary ul li {
+  list-style: none;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  background-color: #98dede;
+  font-size: 10.33px;
+  color: #1a2236;
+}
+
+.one .button-project,
+.three .button-project,
+.five .button-project {
+  display: flex;
+  align-items: center;
+  border: solid white;
+  padding: 0;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  height: 44px;
+}
+
+.one #see-project-one,
+.three #see-project-three,
+.five #see-project-five {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background-color: #1a2236;
+  border: #1a2236;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.two {
+  display: grid;
+  background-color: #1a2236;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 160px 180px;
+}
+
+.two .thumbnail {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url(../images/project_thumbnail_2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.four .thumbnail {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url(../images/project_thumbnail_4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.six .thumbnail {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url(../images/project_thumbnail_6.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vw;
+}
+
+.two .project-summary,
+.four .project-summary,
+.six .project-summary {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 60px 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.two .project-summary p,
+.four .project-summary p,
+.six .project-summary p {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin-bottom: 0;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.two .project-summary ul,
+.four .project-summary ul,
+.six .project-summary ul {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 20px 71px 10px 89px 10px 74px 1fr;
+  grid-template-rows: 28px;
+  padding-inline-start: 0;
+  align-content: center;
+}
+
+.two .project-summary ul li,
+.four .project-summary ul li,
+.six .project-summary ul li {
+  list-style: none;
+  padding: 10px;
+  padding-top: 6px;
+  background-color: #98dede;
+  font-size: 10.33px;
+  color: #1a2236;
+}
+
+#html-two,
+#html-four,
+#html-six {
+  grid-column: 2/3;
+}
+
+#ruby-two,
+#ruby-four,
+#ruby-six {
+  grid-column: 4/5;
+}
+
+#javascript-two,
+#javascript-four,
+#javascript-six {
+  grid-column: 6/7;
+}
+
+.two .button-project,
+.four .button-project,
+.six .button-project {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 20px 182px 1fr;
+  grid-template-rows: 50px 20px;
+}
+
+.two #see-project-two,
+.four #see-project-four,
+.six #see-project-six {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 125px 10px 21px;
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-content: left;
+  background-color: #1a2236;
+  border: #1a2236;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.knowledge .languages div {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-image: url(../images/ic_languages_mob.png);
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+
+.knowledge .frameworks div {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-image: url(../images/ic_framework.png);
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+
+.knowledge .skills div {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  background-image: url(../images/ic_skills.png);
+  background-repeat: no-repeat;
+  margin: 3px;
+}
+
+.two #see-project-two div,
+.four #see-project-four div,
+.six #see-project-six div {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-left: 0;
+  justify-self: left;
+  align-self: flex-start;
+  padding-top: 8px;
+}
+
+.two #see-project-two img,
+.four #see-project-four img,
+.six #see-project-six img {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: right;
+  align-self: flex-start;
+  padding-top: 11px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+#get-my-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #1a2236;
+  border: #1a2236;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 16px;
+}
+
+.knowledge {
+  display: grid;
+  grid-template-rows: repeat(3, 289px);
+  grid-gap: 16px;
+  color: white;
+}
+
+.knowledge h1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  align-self: flex-end;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.knowledge .languages {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: #1c528a;
+  display: grid;
+  grid-gap: 0;
+  padding-left: 20px;
+  grid-template-columns: 1fr 1fr 102px;
+  grid-template-rows: 80px 1fr 102px;
+}
+
+.knowledge .languages ul {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding-inline-start: 35px;
+}
+
+.knowledge .frameworks {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: #e2505c;
+  display: grid;
+  grid-gap: 0;
+  padding-left: 20px;
+  grid-template-columns: 1fr 1fr 102px;
+  grid-template-rows: 80px 1fr 102px;
+}
+
+.knowledge .frameworks ul {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding-inline-start: 35px;
+}
+
+.knowledge .skills {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  background-color: #febf52;
+  display: grid;
+  grid-gap: 0;
+  padding-left: 20px;
+  grid-template-columns: 1fr 1fr 102px;
+  grid-template-rows: 80px 1fr 102px;
+}
+
+.knowledge .skills ul {
+  grid-row: 2/4;
+  grid-column: 1/3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding-inline-start: 35px;
 }
