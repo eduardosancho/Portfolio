@@ -256,7 +256,6 @@ h1 {
 .six .project-summary ul {
   grid-column: 1/4;
   grid-row: 2/3;
-  display: grid;
   grid-template-columns: 20px 71px 10px 89px 10px 74px 1fr;
   grid-template-rows: 28px;
   padding-inline-start: 0;
