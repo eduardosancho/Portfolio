@@ -260,8 +260,9 @@ h1 {
 
 .technologies {
   display: float;
-
+  width: 90vw;
   background-color: lightcoral;
+
 }
 
 .technologies li {
