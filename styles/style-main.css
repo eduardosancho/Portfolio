@@ -254,9 +254,18 @@ h1 {
 .two .project-summary ul,
 .four .project-summary ul,
 .six .project-summary ul {
-  grid-column: 1/4;
-  grid-row: 2/3;
+  padding-inline-start: 0px;
   
+}
+
+.technologies {
+  display: float;
+
+  background-color: lightcoral;
+}
+
+.technologies li {
+  float: left;
 }
 
 .two .project-summary ul li,
