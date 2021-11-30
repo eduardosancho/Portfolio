@@ -329,6 +329,10 @@ h1 {
   grid-template-rows: 50px 20px;
 }
 
+#resume img {
+  margin-left: 10px;
+}
+
 .two #see-project-two,
 .four #see-project-four,
 .six #see-project-six {
@@ -549,10 +553,6 @@ input {
   text-decoration: none;
   margin-right: 16px;
   margin-left: 16px;
-}
-
-#resume img {
-  margin-left: 10px;
 }
 
 .social-networks {
