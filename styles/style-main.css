@@ -251,12 +251,7 @@ h1 {
   margin-left: 20px;
 }
 
-.two .project-summary ul,
-.four .project-summary ul,
-.six .project-summary ul {
-  padding-inline-start: 0px;
-  
-}
+
 
 .technologies {
   display: float;
@@ -267,8 +262,11 @@ h1 {
 
 .technologies li {
   float: left;
-  margin-left: 5px;
-  margin-right: 5px;
+  
+}
+
+.technologies:first-child {
+  margin: 10px;
 }
 
 .two .project-summary ul li,
@@ -468,4 +466,14 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   padding-inline-start: 35px;
+}
+
+.contact-me {
+  display: flex;
+  margin-top: 50px;
+}
+
+
+#contact-background {
+  width: 111px;
 }
