@@ -486,3 +486,7 @@ h1 {
 .contact-me-form p {
   background-color: #e2505c;
 }
+
+.contact-me li {
+  list-style: none;
+}
