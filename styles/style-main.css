@@ -541,12 +541,18 @@ input {
 }
 
 .footer a {
+  display: flex;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
   color: #92dcdc;
   font-size: 16px;
   text-decoration: none;
   margin-right: 16px;
   margin-left: 16px;
+}
+
+#resume img {
+  margin-left: 10px;
 }
 
 .social-networks {
