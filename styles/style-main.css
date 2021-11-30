@@ -148,6 +148,8 @@ h1 {
 
 .contact-me-form p {
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .one .project-summary p,
@@ -512,6 +514,8 @@ label {
 
 label {
   font-family: 'Poppins', sans-serif;
+  color: #7d7c84;
+  font-size: 10px;
 }
 
 input {
