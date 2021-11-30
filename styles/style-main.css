@@ -60,6 +60,13 @@ h1 {
   margin: 16px;
 }
 
+#submit-form {
+  margin-left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+}
+
 #start-collaboration:hover,
 #submit-form:hover {
   background-color: whitesmoke;
@@ -139,6 +146,10 @@ h1 {
   margin-top: 4px;
 }
 
+.contact-me-form p {
+  font-family: 'Poppins', sans-serif;
+}
+
 .one .project-summary p,
 .three .project-summary p,
 .five .project-summary p {
@@ -155,6 +166,20 @@ h1 {
   justify-content: flex-start;
   gap: 10px;
   padding-inline-start: 0;
+}
+
+.technologies li {
+  float: left;
+}
+
+.contact-me-form li {
+  list-style: none;
+  border: solid gray;
+  border-radius: 5px;
+  flex-basis: 100%;
+  height: 52px;
+  margin-bottom: 8px;
+  padding-left: 20px;
 }
 
 .one .project-summary ul li,
@@ -254,18 +279,9 @@ h1 {
   margin-left: 20px;
 }
 
-
-
 .technologies {
-  display: float;
   width: 90vw;
   background-color: lightcoral;
-
-}
-
-.technologies li {
-  float: left;
-  
 }
 
 .technologies:first-child {
@@ -476,32 +492,17 @@ h1 {
   margin-top: 50px;
 }
 
-
 #contact-background {
   width: 111px;
 }
 
-.contact-me-form{
+.contact-me-form {
   margin-left: 18px;
   margin-right: 14px;
 }
 
-.contact-me-form p {
-  font-family: 'Poppins', sans-serif;
-}
-
 .form-list {
-  padding-inline-start: 0px;
-}
-
-.contact-me-form li {
-  list-style: none;
-  border: solid gray;
-  border-radius: 5px;
-  flex-basis: 100%;
-  height: 52px;
-  margin-bottom: 8px;
-  padding-left: 20px;
+  padding-inline-start: 0;
 }
 
 input,
@@ -518,10 +519,10 @@ input {
 }
 
 #form-textarea {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
-#form-textarea textarea{
+#form-textarea textarea {
   height: 90%;
   width: 98%;
 }
@@ -529,7 +530,7 @@ input {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:flex-start;
+  justify-content: flex-start;
   align-items: flex-end;
   background-color: #1a2236;
   padding-top: 32px;
@@ -550,9 +551,4 @@ input {
   justify-content: space-around;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-#submit-form {
-  margin-left: 0px;
-  width: 100%;
 }
