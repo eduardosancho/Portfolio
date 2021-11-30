@@ -48,7 +48,8 @@ h1 {
   margin: 16px;
 }
 
-#start-collaboration {
+#start-collaboration,
+#submit-form {
   background-color: #1a2236;
   color: white;
   border: solid white;
@@ -59,12 +60,14 @@ h1 {
   margin: 16px;
 }
 
-#start-collaboration:hover {
+#start-collaboration:hover,
+#submit-form:hover {
   background-color: whitesmoke;
   color: rgb(14, 14, 68);
 }
 
-#start-collaboration:active {
+#start-collaboration:active,
+#submit-form:active {
   background-color: whitesmoke;
   color: rgb(14, 14, 68);
   border: solid rgb(14, 14, 68) 2px;
@@ -487,6 +490,34 @@ h1 {
   background-color: #e2505c;
 }
 
-.contact-me li {
+.form-list {
+  padding-inline-start: 0px;
+}
+
+.contact-me-form li {
   list-style: none;
+  border: solid gray;
+  border-radius: 5px;
+  flex-basis: 100%;
+  height: 52px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+input,
+label {
+  display: block;
+}
+
+input {
+  border: none;
+}
+
+#form-textarea textarea{
+  height: 90%;
+  width: 98%;
+}
+
+#form-textarea {
+  padding-left: 0px;
 }
