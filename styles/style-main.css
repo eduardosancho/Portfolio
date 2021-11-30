@@ -477,3 +477,12 @@ h1 {
 #contact-background {
   width: 111px;
 }
+
+.contact-me-form{
+  margin-left: 18px;
+  margin-right: 14px;
+}
+
+.contact-me-form p {
+  background-color: #e2505c;
+}
