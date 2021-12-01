@@ -21,7 +21,50 @@ header {
 }
 
 .navbar ul {
-  display: none;
+  visibility: hidden;
+  list-style: none;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  justify-self: flex-start;
+  align-self: flex-end;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .navbar ul {
+    visibility: visible;
+    justify-content: space-around;
+  }
+
+  .navbar #hello {
+    background-image: url(../images/Rectangle\ 52.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+  
 }
 
 section {
@@ -87,6 +130,10 @@ section {
   background-color: whitesmoke;
   color: rgb(14, 14, 68);
   border: solid rgb(14, 14, 68) 2px;
+}
+
+@media only screen and (min-width: 992px) {
+  
 }
 
 .projects {
