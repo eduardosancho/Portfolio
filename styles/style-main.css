@@ -67,11 +67,6 @@ header {
   
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-}
-
 .headline {
   background-image: url(../images/image_geometry_2.svg);
   background-repeat: no-repeat;
@@ -80,7 +75,14 @@ section {
   padding-bottom: 50%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
+
+.headline .left{
+  display: flex;
+  flex-direction: column;
+}
+
 
 #author {
   font-family: 'Playfair Display', serif;
@@ -107,7 +109,8 @@ section {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  padding: 20px;
+  width: auto;
+  padding: 15px;
   margin: 16px;
 }
 
@@ -132,31 +135,59 @@ section {
   border: solid rgb(14, 14, 68) 2px;
 }
 
+.headline .right {
+  display: none;
+}
+
 @media only screen and (min-width: 992px) {
-  .headline{
-    height: auto;
-    background-image: url(../images/image-geometry_1.png);
-    background-repeat: no-repeat;
-    background-size: 50vw;
-    background-position: right;
-    padding-top: 0px;
-    padding-left: 64px;
+  .headline {
+    background-image: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 7vw;
     padding-bottom: 200px;
   }
 
-  #author,
-  #bio {
-    width: calc(50vw - 96px);
+  .headline .left {
+    display: initial;
+    flex: 1 1 50%;
+    margin-top: calc(30vw/4);
+    background-image: url(../images/image_dots.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right bottom;
+    padding-bottom: 0px;
+    padding-left: 0px;
   }
 
   #author {
-    width: calc(50vw - 96px);
-    font-size: 110px;
+    font-size: 5vw;  /*110*/
+    flex: 1;
+    margin-bottom: 30px;
   }
 
   #bio {
     width: calc(50vw - 96px - 10.5%);
-    padding-right: 50px;
+    flex: 1;
+    margin-bottom: 30px;
+  }
+
+  #start-collaboration {
+    flex: 1;
+    width: 254px;
+    margin-bottom: 200px;
+  }
+
+  .headline .right {
+    display: initial;
+    justify-self: end;
+    flex: 10 10 50%;
+    height:auto;
+    width: 50vw;
+    background-image: url(../images/image-geometry_1.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
   }
 }
 
