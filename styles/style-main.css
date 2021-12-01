@@ -48,7 +48,8 @@ h1 {
   margin: 16px;
 }
 
-#start-collaboration {
+#start-collaboration,
+#submit-form {
   background-color: #1a2236;
   color: white;
   border: solid white;
@@ -59,12 +60,22 @@ h1 {
   margin: 16px;
 }
 
-#start-collaboration:hover {
+#submit-form {
+  margin-top: 80px;
+  margin-left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+}
+
+#start-collaboration:hover,
+#submit-form:hover {
   background-color: whitesmoke;
   color: rgb(14, 14, 68);
 }
 
-#start-collaboration:active {
+#start-collaboration:active,
+#submit-form:active {
   background-color: whitesmoke;
   color: rgb(14, 14, 68);
   border: solid rgb(14, 14, 68) 2px;
@@ -136,6 +147,12 @@ h1 {
   margin-top: 4px;
 }
 
+.contact-me-form p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .one .project-summary p,
 .three .project-summary p,
 .five .project-summary p {
@@ -152,6 +169,22 @@ h1 {
   justify-content: flex-start;
   gap: 10px;
   padding-inline-start: 0;
+}
+
+.technologies li {
+  float: left;
+}
+
+.contact-me-form li {
+  list-style: none;
+  border: solid gray;
+  border: 1px solid #dfdfe0;
+  outline: #1a2236;
+  border-radius: 5px;
+  flex-basis: 100%;
+  height: 52px;
+  margin-bottom: 8px;
+  padding-left: 20px;
 }
 
 .one .project-summary ul li,
@@ -251,16 +284,13 @@ h1 {
   margin-left: 20px;
 }
 
-.two .project-summary ul,
-.four .project-summary ul,
-.six .project-summary ul {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  display: grid;
-  grid-template-columns: 20px 71px 10px 89px 10px 74px 1fr;
-  grid-template-rows: 28px;
-  padding-inline-start: 0;
-  align-content: center;
+.technologies {
+  width: 90vw;
+  background-color: lightcoral;
+}
+
+.technologies:first-child {
+  margin: 10px;
 }
 
 .two .project-summary ul li,
@@ -300,6 +330,10 @@ h1 {
   display: grid;
   grid-template-columns: 20px 182px 1fr;
   grid-template-rows: 50px 20px;
+}
+
+#resume img {
+  margin-left: 10px;
 }
 
 .two #see-project-two,
@@ -460,4 +494,84 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   padding-inline-start: 35px;
+}
+
+.contact-me {
+  display: flex;
+  margin-top: 50px;
+  background-image: url(../images/mobile_geometry_1.png);
+  background-repeat: no-repeat;
+}
+
+.contact-me-form {
+  margin-left: 18px;
+  margin-right: 14px;
+}
+
+.contact-me-form h1 {
+  margin-top: 106px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-list {
+  padding-inline-start: 0;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  color: #7d7c84;
+  font-size: 10px;
+}
+
+input {
+  border: none;
+}
+
+#form-textarea {
+  padding-left: 0;
+}
+
+#form-textarea textarea {
+  height: 112px;
+  width: 90%;
+  padding: 15px;
+  border: 1px solid #dfdfe0;
+  outline: #1a2236;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-color: #1a2236;
+  padding-top: 32px;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #92dcdc;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.social-networks {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
