@@ -35,27 +35,32 @@ section {
   background-size: contain;
   background-position: bottom;
   padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
-.headline #author {
+#author {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 400;
+  color: #1a2236;
   margin: 16px;
+  flex: 1 1 100%;
 }
 
-.headline #bio {
+#bio {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  color: #1a2236;
   margin: 16px;
 }
 
 #start-collaboration,
 #submit-form {
   background-color: #1a2236;
+  border: none;
   color: white;
-  border: solid white;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
