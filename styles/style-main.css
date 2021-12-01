@@ -16,15 +16,12 @@ header {
   margin-bottom: 20px;
 }
 
-.navbar ul {
-  display: none;
-}
-
 .toggleNav {
   padding: 20px;
 }
 
 .navbar ul {
+  display: none;
 }
 
 section {
