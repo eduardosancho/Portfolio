@@ -34,7 +34,7 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  padding-bottom: 200px;
+  padding-bottom: 50%;
   display: flex;
   flex-direction: column;
 }
