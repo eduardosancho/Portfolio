@@ -28,27 +28,20 @@
 
     <main>
         <section class="headline">
-            <div class="headline-top">
-                <h1 class="headline-name">
-                    Eduardo <br>
-                    Sancho
-                </h1>
-
-                <p class="headline-bio">
-                    Hello! I am a software developer! <br>
-                    I can help you build a product, feature <br>
-                    or website. Take a look at my work. <br>
-                    If you like what you see and have a <br>
-                    project you need coded, don’t hesitate <br>
-                    and contact me.
-                </p>
-
-                <button id="start-collaboration" type="button">Start collaboration</button>
-            </div>
-
-            <div class="headline-last">
-                <div id="background-shapes-medium">
-                </div>
+            <h1 id="author">
+                Eduardo <br>
+                Sancho
+            </h1>
+            <p id="bio">
+                Hello! I am a software developer! <br>
+                I can help you build a product, feature <br>
+                or website. Take a look at my work. <br>
+                If you like what you see and have a <br>
+                project you need coded, don’t hesitate <br>
+                and contact me.
+            </p>
+            <button id="start-collaboration" type="button">Start collaboration</button>
+            <div id="background-shapes-medium">
             </div>
         </section>
 
@@ -226,14 +219,16 @@
                     <ul class="form-list">
                         <li>
                             <label for="name">Your name</label>
-                            <input type="text" id="name" name="user_name" placeholder="John Doe" maxlength="30" required>
+                            <input type="text" id="name" name="user_name" placeholder="John Doe" maxlength="30"
+                                required>
                         </li>
                         <li>
                             <label for="email">Your email</label>
                             <input type="email" id="email" name="user_email" placeholder="abc@email.com" required>
                         </li>
                         <li id="form-textarea">
-                            <textarea name="message" placeholder="Enter your message here..." maxlength="500" required></textarea>
+                            <textarea name="message" placeholder="Enter your message here..." maxlength="500"
+                                required></textarea>
                         </li>
                     </ul>
                     <button type="submit" id="submit-form">Start collaboration</button>

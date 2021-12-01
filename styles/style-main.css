@@ -29,19 +29,22 @@ section {
   flex-direction: column;
 }
 
-.headline-top {
-  display: flex;
-  flex-direction: column;
+.headline {
+  background-image: url(../images/image_geometry_2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding-bottom: 200px;
 }
 
-h1 {
+.headline #author {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 400;
   margin: 16px;
 }
 
-.headline-bio {
+.headline #bio {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
