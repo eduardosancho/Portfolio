@@ -499,7 +499,7 @@ h1 {
 .contact-me {
   display: flex;
   margin-top: 50px;
-  background-image: url(/images/mobile_geometry_1.png);
+  background-image: url(../images/mobile_geometry_1.png);
   background-repeat: no-repeat;
 }
 
