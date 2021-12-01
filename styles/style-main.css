@@ -1,19 +1,23 @@
-#background-shapes-small {
-  background-image: url(../images/mobile_geometry_1.png);
-  background-repeat: no-repeat;
-  height: 74px;
-  width: 111px;
+body {
+  margin: 0;
 }
 
-.header {
+header {
+  background-image: url(../images/mobile_geometry_1.png);
+  background-repeat: no-repeat;
   display: flex;
 }
 
 .navbar {
+  flex: 1 1 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: flex-start;
   margin-bottom: 20px;
+}
+
+.navbar ul {
+  display: none;
 }
 
 .toggleNav {
@@ -21,7 +25,6 @@
 }
 
 .navbar ul {
-  display: none;
 }
 
 section {
