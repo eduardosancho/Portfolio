@@ -89,20 +89,6 @@ section {
   border: solid rgb(14, 14, 68) 2px;
 }
 
-.headline-last {
-  display: flex;
-  justify-content: stretch;
-  align-content: stretch;
-}
-
-#background-shapes-medium {
-  background-image: url(../images/image_geometry_2.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex: 1;
-  height: 50vw;
-}
-
 .projects {
   display: grid;
   grid-template-rows: 99px repeat(6, 342px);
