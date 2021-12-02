@@ -136,6 +136,55 @@ header {
   display: none;
 }
 
+@media only screen and (min-width: 992px) {
+  .headline {
+    background-image: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 7vw;
+    padding-bottom: 200px;
+  }
+
+  .headline .left {
+    display: initial;
+    flex: 1 1 40%;
+    margin-top: calc(28vw / 2);
+    background-image: url(../images/image_dots.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right bottom;
+    padding-bottom: 180px;
+    padding-left: 0;
+  }
+
+  #author {
+    font-size: 5vw;
+    width: calc(50vw - 96px - 25.5%);
+    margin-bottom: 30px;
+  }
+
+  #bio {
+    width: calc(50vw - 96px - 25.5%);
+    margin-bottom: 30px;
+  }
+
+  #start-collaboration {
+    flex: 1;
+    width: 254px;
+  }
+
+  .headline .right {
+    display: initial;
+    justify-self: end;
+    flex: 10 10 60%;
+    height: 75vw;
+    background-image: url(../images/image-geometry_1.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+  }
+}
+
 .projects {
   margin-top: 20px;
   display: grid;
