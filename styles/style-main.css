@@ -653,10 +653,19 @@ textarea {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-end;
   background-color: #1a2236;
   padding-top: 32px;
+}
+
+#resume {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #92dcdc;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 #resume img {
@@ -664,14 +673,10 @@ textarea {
 }
 
 .footer a {
-  display: flex;
-  align-items: center;
   font-family: 'Poppins', sans-serif;
   color: #92dcdc;
   font-size: 16px;
   text-decoration: none;
-  margin-right: 16px;
-  margin-left: 16px;
 }
 
 .social-networks {
@@ -680,4 +685,23 @@ textarea {
   justify-content: space-around;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    flex-wrap: nowrap;
+    padding-top: 0;
+    padding-left: 11vw;
+    padding-right: 11vw;
+  }
+
+  .footer a {
+    white-space: nowrap;
+  }
+
+  .social-networks {
+    flex: 1 1 20%;
+    justify-content: flex-end;
+    gap: 3vw;
+  }
 }
