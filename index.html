@@ -152,16 +152,18 @@
         </section>
 
         <section class="about">
-            <h1>About</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ea eiusmod
-            </p>
-            <button id="get-my-cv" type="button">Get my CV
-                <img id="get-my-cv-image" src="images/ic_download.svg" alt="download-icon">
-            </button>
+            <div class="right">
+                <h1>About</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ea eiusmod
+                </p>
+                <button id="get-my-cv" type="button">Get my CV
+                    <img src="images/ic_download.svg" alt="download-icon">
+                </button>
+            </div>
             <div class="knowledge">
                 <div class="languages">
                     <h2>Languages</h2>
@@ -192,16 +194,20 @@
                         <li>Terminal</li>
                     </ul>
                 </div>
+                <div class="dots-tile"></div>
             </div>
         </section>
+
         <section class="contact-me">
             <div class="contact-me-form">
-                <h1> Get started</h1>
-                <p id="form-description">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna.
-                </p>
+                <div class="top">
+                    <h1> Get started</h1>
+                    <p id="form-description">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.
+                    </p>
+                </div>
                 <form class="form" action="https://formspree.io/f/xwkyewre" method="post">
                     <ul class="form-list">
                         <li id="form-name">
@@ -214,13 +220,15 @@
                             <input type="email" id="email" name="user_email" placeholder="abc@email.com" required>
                         </li>
                     </ul>
-                    <label for="msg"></label>
+                    <label id="msg-label" for="msg">Message</label>
                     <textarea id="msg" name="message" placeholder="Enter your message here..." maxlength="500"
                         required></textarea>
                     <button type="submit" id="submit-form">Start collaboration</button>
                 </form>
-
             </div>
+        </section>
+        
+        <section class="end">
             <footer class="footer">
                 <a id="resume" href="https://www.linkedin.com/in/eduardo-sancho-043641181/">Get my Resume
                     <img src="images/Union2.png" alt="new-page-icon">
