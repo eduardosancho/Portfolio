@@ -36,8 +36,6 @@ header {
   font-size: 16px;
   justify-self: flex-start;
   align-self: flex-end;
-  text-decoration: none;
-  font-size: 40px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -63,8 +61,6 @@ header {
   .navbar a {
     font-size: 16px;
   }
-
-  
 }
 
 .headline {
@@ -78,11 +74,10 @@ header {
   flex-wrap: wrap;
 }
 
-.headline .left{
+.headline .left {
   display: flex;
   flex-direction: column;
 }
-
 
 #author {
   font-family: 'Playfair Display', serif;
@@ -104,7 +99,6 @@ header {
 #start-collaboration,
 #submit-form {
   background-color: #1a2236;
-  border: none;
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -154,13 +148,13 @@ header {
   .headline .left {
     display: initial;
     flex: 1 1 41%;
-    margin-top: calc(28vw/2);
+    margin-top: calc(28vw / 2);
     background-image: url(../images/image_dots.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
     padding-bottom: 180px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   #author {
@@ -252,7 +246,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
-  font-weight: 300; padding-inline-start: 4vw;
+  font-weight: 300;
+  padding-inline-start: 4vw;
   padding-inline-end: 4vw;
 }
 
@@ -275,7 +270,7 @@ header {
   list-style: none;
   text-align: center;
   padding-top: 0.7em;
-  width:28vw;
+  width: 28vw;
   white-space: nowrap;
   background-color: #98dede;
   font-size: 3.5vw;
@@ -409,11 +404,14 @@ header {
 .form {
   display: flex;
   flex-direction: column;
+  height: 400px;
 }
 
 .form-list {
+  flex: 1 1 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 0;
   padding-inline-start: 0;
 }
 
@@ -450,8 +448,9 @@ input {
 textarea {
   flex: 1 1 100%;
   list-style: none;
-  height: 112px;
   padding: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
   border: 1px solid #dfdfe0;
   outline: #1a2236;
   border-radius: 5px;
