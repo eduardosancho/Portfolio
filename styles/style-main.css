@@ -38,6 +38,31 @@ header {
   align-self: flex-end;
 }
 
+@media only screen and (min-width: 992px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .navbar ul {
+    visibility: visible;
+    justify-content: space-around;
+  }
+
+  .navbar #hello {
+    background-image: url(../images/Rectangle\ 52.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+}
+
 .headline {
   background-image: url(../images/image_geometry_2.svg);
   background-repeat: no-repeat;
