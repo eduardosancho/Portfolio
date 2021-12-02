@@ -182,8 +182,6 @@ header {
     display: initial;
     justify-self: end;
     flex: 10 10 50%;
-    height:auto;
-    width: 50vw;
     background-image: url(../images/image-geometry_1.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
