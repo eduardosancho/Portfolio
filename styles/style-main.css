@@ -19,7 +19,7 @@ header {
 .toggleNav {
   padding: 20px;
   background-color: white;
-  transition: background-color 2s , transform 1s;
+  transition: background-color 2s, transform 1s;
 }
 
 .toggleNav:hover {
@@ -238,9 +238,6 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-}
-
-.thumbnail {
   background-image: url(../images/project_thumbnail_1.svg);
   transition-property: background-size;
   transition-duration: 1s;
