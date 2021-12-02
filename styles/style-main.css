@@ -279,6 +279,23 @@ header {
   margin: 16px;
 }
 
+@keyframes pulsing {
+  from {
+    font-size: 16px;
+  }
+
+  to {
+    font-size: 20px;
+  }
+}
+
+#get-my-cv:hover {
+  animation-name: pulsing, pulsing-2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .knowledge {
   margin-top: 20px;
   display: grid;
