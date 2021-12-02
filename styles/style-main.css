@@ -290,6 +290,38 @@ header {
   font-weight: 500;
 }
 
+@media only screen and (min-width: 992px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 49vw 12vw 12vw 13vw 7vw 7vw 7vw 8.6vw 10.1vw;
+  }
+
+  .projects h1 {
+    grid-row: 1/2;
+    transform: rotate(-90deg);
+    font-size: 110px;
+    position: relative;
+    top: 0;
+    background-image: url(../images/image_dots.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  .one .thumbnail {
+    grid-column: 2/8;
+    grid-row: 1/2;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    display: none;
+  }
+}
+
 .about {
   display: flex;
   flex-direction: column;
