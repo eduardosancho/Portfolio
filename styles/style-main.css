@@ -18,6 +18,13 @@ header {
 
 .toggleNav {
   padding: 20px;
+  background-color: white;
+  transition: background-color 2s , transform 1s;
+}
+
+.toggleNav:hover {
+  background-color: gray;
+  transform: rotate(-180deg);
 }
 
 .navbar ul {
@@ -61,6 +68,18 @@ header {
   color: #1a2236;
   margin: 16px;
   flex: 1 1 100%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 16px;
+  }
 }
 
 #bio {
@@ -82,6 +101,8 @@ header {
   padding: 15px;
   margin: 16px;
   border: solid white 3px;
+  transition-property: background-color, color, border;
+  transition-duration: 0.5s;
 }
 
 #submit-form {
@@ -141,11 +162,18 @@ header {
 .thumbnail {
   height: 60vw;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  background-position: center;
 }
 
-.one .thumbnail {
+.thumbnail {
   background-image: url(../images/project_thumbnail_1.svg);
+  transition-property: background-size;
+  transition-duration: 1s;
+}
+
+.thumbnail:hover {
+  background-size: 105%;
 }
 
 .two .thumbnail {
@@ -357,6 +385,11 @@ input {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 14px;
+  transition: transform 1s;
+}
+
+#form-description:hover {
+  transform: translate(10px);
 }
 
 #form-name,
