@@ -112,6 +112,7 @@ header {
   width: auto;
   padding: 15px;
   margin: 16px;
+  border: solid white 3px;
 }
 
 #submit-form {
@@ -125,14 +126,15 @@ header {
 #start-collaboration:hover,
 #submit-form:hover {
   background-color: whitesmoke;
-  color: rgb(14, 14, 68);
+  color: #1a2236;
+  border: solid #1a2236 3px;
 }
 
 #start-collaboration:active,
 #submit-form:active {
   background-color: whitesmoke;
   color: rgb(14, 14, 68);
-  border: solid rgb(14, 14, 68) 2px;
+  border: solid #1a2236 3px;
 }
 
 .headline .right {
