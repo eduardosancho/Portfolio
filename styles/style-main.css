@@ -568,10 +568,30 @@ textarea {
 }
 
 @media only screen and (min-width: 992px) {
+  .contact-me {
+    background-image: url(../images/image-geometry_7.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+  }
+
+  .contact-me .top {
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/image-geometry_6.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+  }
+  
   .contact-me-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
 
   .contact-me-form h1 {
