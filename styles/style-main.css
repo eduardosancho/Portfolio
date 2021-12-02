@@ -38,31 +38,6 @@ header {
   align-self: flex-end;
 }
 
-@media only screen and (min-width: 992px) {
-  .navbar {
-    justify-content: center;
-  }
-
-  .navbar img {
-    display: none;
-  }
-
-  .navbar ul {
-    visibility: visible;
-    justify-content: space-around;
-  }
-
-  .navbar #hello {
-    background-image: url(../images/Rectangle\ 52.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
-  }
-
-  .navbar a {
-    font-size: 16px;
-  }
-}
-
 .headline {
   background-image: url(../images/image_geometry_2.svg);
   background-repeat: no-repeat;
@@ -134,55 +109,6 @@ header {
 
 .headline .right {
   display: none;
-}
-
-@media only screen and (min-width: 992px) {
-  .headline {
-    background-image: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 7vw;
-    padding-bottom: 200px;
-  }
-
-  .headline .left {
-    display: initial;
-    flex: 1 1 41%;
-    margin-top: calc(28vw / 2);
-    background-image: url(../images/image_dots.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: right bottom;
-    padding-bottom: 180px;
-    padding-left: 0;
-  }
-
-  #author {
-    font-size: 5vw;
-    width: calc(50vw - 96px - 25.5%);
-    margin-bottom: 30px;
-  }
-
-  #bio {
-    width: calc(50vw - 96px - 25.5%);
-    margin-bottom: 30px;
-  }
-
-  #start-collaboration {
-    flex: 1;
-    width: 254px;
-  }
-
-  .headline .right {
-    display: initial;
-    justify-self: end;
-    flex: 10 10 59%;
-    height: 68vw;
-    background-image: url(../images/image-geometry_1.svg);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: contain;
-  }
 }
 
 .projects {
