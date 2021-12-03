@@ -156,6 +156,7 @@
 }
 
 #image-geometry-2 {
+  display: initial;
   background-image: url(../images/image-geometry_2.svg);
   background-repeat: no-repeat;
   background-size: contain;

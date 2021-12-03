@@ -216,6 +216,10 @@ header {
   font-weight: 500;
 }
 
+#image-geometry-2 {
+  display: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;
