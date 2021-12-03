@@ -70,27 +70,50 @@
 
 .projects {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
-  grid-template-rows: 49vw 12vw 12vw 13vw 7vw 7vw 7vw 8.6vw 10.1vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
+  grid-template-rows: 37.4vw 12vw 12vw 13vw 7vw 7vw 7vw 8.6vw 10.1vw;
+}
+
+#projects-title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/image_dots.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 11vw;
 }
 
 .projects h1 {
-  grid-row: 1/2;
   transform: rotate(-90deg);
-  font-size: 110px;
-  position: relative;
-  top: 0;
-  background-image: url(../images/image_dots.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  font-size: 7.6vw;
+  align-self: flex-start;
+  margin-top: 2ch;
+  padding-left: 0;
+}
+
+.one {
+  grid-row: 1/2;
+  grid-column: 4/10;
+  overflow: hidden;
 }
 
 .one .thumbnail {
-  grid-column: 2/8;
-  grid-row: 1/2;
+  background-color: white;
+  background-size: contain;
 }
 
-.one,
+.project-summary {
+  display: none;
+}
+
+.project-summary:hover {
+  display: flex;
+  background-color: black;
+}
+
+
 .two,
 .three,
 .four,
