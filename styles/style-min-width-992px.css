@@ -33,7 +33,7 @@ header {
 .headline {
   background-image: none;
   flex-direction: row;
-  padding-bottom: 15vw;
+  padding-bottom: 12vw;
 }
 
 .headline .left {
@@ -402,7 +402,7 @@ header {
   display: initial;
   background-image: url(../images/image-geometry_4.svg);
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 25%;
   background-position: right top;
   grid-column: 4/6;
   grid-row: 10/12;
@@ -412,7 +412,7 @@ header {
   display: initial;
   background-image: url(../images/image-geometry_5.svg);
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 45%;
   grid-column: 1/4;
   grid-row: 10/12;
 }
