@@ -420,44 +420,57 @@ header {
 .about {
   flex-direction: row-reverse;
   justify-content: center;
-  margin: 160px;
+  margin: 5vw;
 }
 
 .about .right {
   display: flex;
   flex-direction: column;
-  padding-left: 80px;
+  padding-left: 4vw;
+  flex: 1 1 50%;
 }
 
 .about h1 {
-  font-size: 110px;
+  font-size: 6vw;
 }
 
 .about p {
-  margin-top: 16px;
+  margin-top: 1vw;
+  font-size: 1.4vw;
 }
 
 #get-my-cv {
-  font-size: 18px;
+  font-size: 1.8vw;
   align-self: flex-start;
-  width: 254px;
+  width: 20vw;
+  padding: 1vw;
 }
 
 .knowledge {
+  flex: 1 1 50%;
   display: grid;
-  grid-template-columns: 289px 289px;
-  grid-template-rows: 289px 289px;
+  grid-template-columns: repeat(2, 20vw);
+  grid-template-rows: repeat(2, 20vw);
   margin-top: 0;
 }
 
 .knowledge h2 {
-  font-size: 20px;
+  font-size: 1.8vw;
   font-weight: 800;
+  margin-top: 1.5vw;
 }
 
 .knowledge ul {
-  font-size: 18px;
+  font-size: 1.4vw;
   font-weight: 600;
+  padding-top: 0;
+}
+
+.languages,
+.frameworks,
+.skills {
+  padding-left: 1vw;
+  padding-top: 1vw;
 }
 
 .languages {
@@ -484,6 +497,7 @@ header {
   background-image: url(../images/image_dots_with_teal.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 15vw;
 }
 
 .contact-me {
