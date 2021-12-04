@@ -385,6 +385,15 @@
   grid-row: 10/12;
 }
 
+#image-geometry-5 {
+  display: initial;
+  background-image: url(../images/image-geometry_5.svg);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  grid-column: 1/4;
+  grid-row: 10/12;
+}
+
 .four {
   display: none;
 }
