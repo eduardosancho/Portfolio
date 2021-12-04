@@ -4,6 +4,8 @@ header {
 
 .navbar {
   justify-content: center;
+  margin-bottom: 0;
+  padding: 1vw;
 }
 
 .navbar img {
@@ -14,12 +16,14 @@ header {
   visibility: visible;
   justify-content: space-around;
   width: 40vw;
+  padding-inline-start: 0;
 }
 
 .navbar #hello {
   background-image: url(../images/Rectangle\ 52.png);
   background-repeat: no-repeat;
   background-position: bottom left;
+  background-size: 3.5vw;
 }
 
 .navbar a {

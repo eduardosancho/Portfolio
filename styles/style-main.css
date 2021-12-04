@@ -26,8 +26,6 @@ header {
   list-style: none;
   align-self: center;
   display: flex;
-  justify-content: space-around;
-  height: 13.5vw;
 }
 
 .navbar a {
