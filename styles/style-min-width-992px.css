@@ -71,7 +71,7 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr;
-  grid-template-rows: 37.4vw 4vw 8vw 6vw 6vw 12vw 7vw 7vw 7vw 8.6vw 10.1vw;
+  grid-template-rows: 37.4vw 4vw 8vw 6vw 6vw 12vw repeat(3, 6vw) 8.6vw 10.1vw;
 }
 
 #projects-title {
@@ -223,6 +223,15 @@
   background-size: contain;
   grid-column: 4/7;
   grid-row: 2/6;
+}
+
+#image-geometry-3 {
+  display: initial;
+  background-image: url(../images/image-geometry_3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-column: 6/10;
+  grid-row: 7/10;
 }
 
 .three,

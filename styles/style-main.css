@@ -220,6 +220,10 @@ header {
   display: none;
 }
 
+#image-geometry-3 {
+  display: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;
