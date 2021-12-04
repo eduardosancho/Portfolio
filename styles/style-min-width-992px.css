@@ -103,14 +103,22 @@ header {
   margin-top: 2ch;
 }
 
+.one,
+.two,
+.three,
+.for,
+.five,
+.six {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .one {
   grid-row: 1/2;
   grid-column: 4/10;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_1.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .two {
@@ -118,9 +126,6 @@ header {
   grid-column: 1/4;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_2.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .three {
@@ -138,9 +143,6 @@ header {
   grid-column: 6/9;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_4.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .five {
@@ -148,9 +150,6 @@ header {
   grid-column: 7/10;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_5.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .six {
@@ -158,9 +157,6 @@ header {
   grid-column: 7/10;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_6.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .one .project-summary {
@@ -168,12 +164,6 @@ header {
   background-color: rgba(0, 0, 0, 0);
   transition: transform 1s, background-color 1s;
   padding-bottom: 10vw;
-}
-
-.one:hover .project-summary {
-  transform: translateY(10vw);
-  background-color: #1a2236;
-  color: white;
 }
 
 .two .project-summary {
@@ -184,24 +174,12 @@ header {
   padding-inline-start: 2vw;
 }
 
-.two:hover .project-summary {
-  transform: translateY(4vw);
-  background-color: #1a2236;
-  color: white;
-}
-
 .three .project-summary {
   transform: translateY(24vw);
   background-color: rgba(0, 0, 0, 0);
   transition: transform 1s, background-color 1s;
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
-}
-
-.three:hover .project-summary {
-  transform: translateY(8vw);
-  background-color: #1a2236;
-  color: white;
 }
 
 .four .project-summary,
@@ -212,6 +190,24 @@ header {
   transition: transform 1s, background-color 1s;
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
+}
+
+.one:hover .project-summary {
+  transform: translateY(10vw);
+  background-color: #1a2236;
+  color: white;
+}
+
+.two:hover .project-summary {
+  transform: translateY(4vw);
+  background-color: #1a2236;
+  color: white;
+}
+
+.three:hover .project-summary {
+  transform: translateY(8vw);
+  background-color: #1a2236;
+  color: white;
 }
 
 .four:hover .project-summary,
