@@ -68,7 +68,7 @@
   background-size: cover;
 }
 
-.thumbnail{
+.thumbnail {
   display: none;
 }
 
@@ -137,7 +137,6 @@
 }
 
 .one .project-summary {
-  background-color: #1a2236;
   transform: translateY(29vw);
   background-color: rgba(0, 0, 0, 0);
   transition: transform 1s, background-color 1s;
@@ -151,7 +150,6 @@
 }
 
 .two .project-summary {
-  background-color: #1a2236;
   transform: translateY(16vw);
   background-color: rgba(0, 0, 0, 0);
   transition: transform 1s, background-color 1s;
@@ -167,7 +165,6 @@
 
 .five .project-summary,
 .six .project-summary {
-  background-color: #1a2236;
   transform: translateY(14vw);
   background-color: rgba(0, 0, 0, 0);
   transition: transform 1s, background-color 1s;
@@ -182,7 +179,7 @@
   color: white;
 }
 
-.one .project-summary h2 {
+.one h2 {
   flex: 0;
   background-color: #1a2236;
   width: 11ch;
@@ -196,7 +193,7 @@
   border-radius: 5px;
 }
 
-.one .project-summary ul {
+.one ul {
   height: 4vw;
   align-items: center;
   justify-content: flex-start;
@@ -204,7 +201,7 @@
   padding-left: 1vw;
 }
 
-.one .project-summary li {
+.one li {
   padding: 1em;
   width: 10vw;
   font-size: 1.4vw;
@@ -218,7 +215,7 @@
   margin-left: 1vw;
 }
 
-.two .project-summary h2 {
+.two h2 {
   flex: 0;
   background-color: #1a2236;
   width: 11ch;
@@ -232,7 +229,7 @@
   border-radius: 5px;
 }
 
-.two .project-summary ul {
+.two ul {
   height: 3vw;
   align-items: center;
   justify-content: flex-start;
@@ -242,7 +239,7 @@
   padding-left: 1vw;
 }
 
-.two .project-summary li {
+.two li {
   padding: 1em;
   width: 7vw;
   font-size: 0.8vw;
@@ -255,8 +252,9 @@
   padding: 0.8vw;
   margin-left: 1vw;
 }
-.five .project-summary h2,
-.six .project-summary h2 {
+
+.five h2,
+.six h2 {
   flex: 0;
   background-color: #1a2236;
   width: 11ch;
@@ -270,8 +268,8 @@
   border-radius: 5px;
 }
 
-.five .project-summary ul,
-.six .project-summary ul {
+.five ul,
+.six ul {
   height: 3vw;
   align-items: center;
   justify-content: flex-start;
@@ -281,8 +279,8 @@
   padding-left: 1vw;
 }
 
-.five .project-summary li,
-.six .project-summary li {
+.five li,
+.six li {
   padding: 1em;
   width: 6vw;
   font-size: 0.8vw;
