@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style-main.css">
     <title>Setup and Mobile Version Skeleton</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-main.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./styles/style-min-width-992px.css">
 </head>
 
 <body>
@@ -47,7 +48,9 @@
         </section>
 
         <section class="projects">
-            <h1>Projects</h1>
+            <div id="projects-title">
+                <h1>Projects</h1>
+            </div>
             <div class="one">
                 <div class="thumbnail">
                 </div>
@@ -149,19 +152,26 @@
                     </button>
                 </div>
             </div>
+
+            <div id="image-geometry-2"></div>
+            <div id="image-geometry-3"></div>
+            <div id="image-geometry-4"></div>
+            <div id="image-geometry-5"></div>
         </section>
 
         <section class="about">
-            <h1>About</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ea eiusmod
-            </p>
-            <button id="get-my-cv" type="button">Get my CV
-                <img src="images/ic_download.svg" alt="download-icon">
-            </button>
+            <div class="right">
+                <h1>About</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ea eiusmod
+                </p>
+                <button id="get-my-cv" type="button">Get my CV
+                    <img src="images/ic_download.svg" alt="download-icon">
+                </button>
+            </div>
             <div class="knowledge">
                 <div class="languages">
                     <h2>Languages</h2>
@@ -192,16 +202,20 @@
                         <li>Terminal</li>
                     </ul>
                 </div>
+                <div class="dots-tile"></div>
             </div>
         </section>
+
         <section class="contact-me">
             <div class="contact-me-form">
-                <h1> Get started</h1>
-                <p id="form-description">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna.
-                </p>
+                <div class="top">
+                    <h1> Get started</h1>
+                    <p id="form-description">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna.
+                    </p>
+                </div>
                 <form class="form" action="https://formspree.io/f/xwkyewre" method="post">
                     <ul class="form-list">
                         <li id="form-name">
@@ -214,35 +228,37 @@
                             <input type="email" id="email" name="user_email" placeholder="abc@email.com" required>
                         </li>
                     </ul>
-                    <label for="msg"></label>
+                    <label id="msg-label" for="msg">Message</label>
                     <textarea id="msg" name="message" placeholder="Enter your message here..." maxlength="500"
                         required></textarea>
                     <button type="submit" id="submit-form">Start collaboration</button>
                 </form>
-
             </div>
+        </section>
+
+        <section class="end">
             <footer class="footer">
                 <a id="resume" href="https://www.linkedin.com/in/eduardo-sancho-043641181/">Get my Resume
-                    <img src="images/Union2.png" alt="new-page-icon">
+                    <img src="images/ic-link_teal.svg" alt="new-page-icon">
                 </a>
                 <div class="social-networks">
                     <a href="https://stackoverflow.com/">
-                        <img src="images/ic_stackoverflow.png" alt="stackoverflow">
+                        <img src="images/ic_stackoverflow.svg" alt="stackoverflow">
                     </a>
                     <a href="https://github.com/eduardosancho">
-                        <img src="images/ic_github.png" alt="github">
+                        <img src="images/ic_github.svg" alt="github">
                     </a>
                     <a href="https://twitter.com/sanchitobless">
-                        <img src="images/ic_twitter.png" alt="twitter">
+                        <img src="images/ic_twitter.svg" alt="twitter">
                     </a>
                     <a href="https://www.linkedin.com/in/eduardo-sancho-043641181/">
-                        <img src="images/ic_linkedin.png" alt="linkedin">
+                        <img src="images/ic_linkedin.svg" alt="linkedin">
                     </a>
                     <a href="https://medium.com/@eduardosanchosolano">
-                        <img src="images/ic_medium.png" alt="medium">
+                        <img src="images/ic_medium.svg" alt="medium">
                     </a>
                     <a href="https://angel.co/u/eduardo-sancho-1">
-                        <img src="images/ic_angellist.png" alt="angelist">
+                        <img src="images/ic_angellist.svg" alt="angelist">
                     </a>
                 </div>
             </footer>
