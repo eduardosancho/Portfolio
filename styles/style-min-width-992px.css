@@ -1,3 +1,7 @@
+header {
+  background-image: none;
+}
+
 .navbar {
   justify-content: center;
 }
@@ -9,6 +13,7 @@
 .navbar ul {
   visibility: visible;
   justify-content: space-around;
+  width: 40vw;
 }
 
 .navbar #hello {
@@ -18,7 +23,7 @@
 }
 
 .navbar a {
-  font-size: 16px;
+  font-size: 2.2vw;
 }
 
 .headline {
