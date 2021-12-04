@@ -295,7 +295,7 @@
   height: 4vw;
   align-items: center;
   justify-content: flex-start;
-  gap: 1vw;
+  gap: 2vw;
   margin-top: 0.8vw;
   margin-bottom: 0.8vw;
   padding-left: 1vw;
@@ -373,6 +373,16 @@
   background-size: contain;
   grid-column: 6/10;
   grid-row: 7/10;
+}
+
+#image-geometry-4 {
+  display: initial;
+  background-image: url(../images/image-geometry_4.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right top;
+  grid-column: 4/6;
+  grid-row: 11/13;
 }
 
 .four {

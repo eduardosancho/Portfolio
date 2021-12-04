@@ -216,11 +216,9 @@ header {
   font-weight: 500;
 }
 
-#image-geometry-2 {
-  display: none;
-}
-
-#image-geometry-3 {
+#image-geometry-2,
+#image-geometry-3,
+#image-geometry-4 {
   display: none;
 }
 
