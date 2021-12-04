@@ -75,7 +75,7 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr 1fr 1fr;
-  grid-template-rows: 37.4vw 4vw 8vw 6vw 6vw 12vw repeat(3, 6vw) 8.6vw 10.1vw;
+  grid-template-rows: 37.4vw 4vw 8vw 6vw 6vw 12vw repeat(3, 6vw) 3.4vw 8vw 8vw;
 }
 
 #projects-title {
@@ -111,6 +111,16 @@
   grid-column: 1/4;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.three {
+  grid-row: 6/11;
+  grid-column: 1/6;
+  overflow: hidden;
+  background-image: url(../images/project_thumbnail_3.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: rgba(0, 0, 0, 0);
@@ -159,6 +169,20 @@
 
 .two:hover .project-summary {
   transform: translateY(4vw);
+  background-color: #1a2236;
+  color: white;
+}
+
+.three .project-summary {
+  transform: translateY(27vw);
+  background-color: rgba(0, 0, 0, 0);
+  transition: transform 1s, background-color 1s;
+  padding-bottom: 5vw;
+  padding-inline-start: 2vw;
+}
+
+.three:hover .project-summary {
+  transform: translateY(10vw);
   background-color: #1a2236;
   color: white;
 }
@@ -253,6 +277,44 @@
   margin-left: 1vw;
 }
 
+.three h2 {
+  flex: 0;
+  background-color: #1a2236;
+  width: 11ch;
+  font-size: 3.5vw;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-top: 0.7vw;
+  margin-bottom: 0.7vw;
+  border-radius: 5px;
+}
+
+.three ul {
+  height: 4vw;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+  margin-top: 0.8vw;
+  margin-bottom: 0.8vw;
+  padding-left: 1vw;
+}
+
+.three li {
+  padding: 1em;
+  width: 9vw;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.three .see-project {
+  margin-top: 1.5vw;
+  font-size: 1.8vw;
+  padding: 1vw;
+  margin-left: 1vw;
+}
+
 .five h2,
 .six h2 {
   flex: 0;
@@ -313,7 +375,6 @@
   grid-row: 7/10;
 }
 
-.three,
 .four {
   display: none;
 }
