@@ -381,7 +381,7 @@ input {
 }
 
 #msg-label {
-  display: none;
+  visibility: hidden;
 }
 
 textarea {
