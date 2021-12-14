@@ -9,10 +9,14 @@
   gap: 0.8rem;
   position: fixed;
   top: -100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(2px);
+  background-color: white;
+  background-image: url(../images/image_geometry_menu_1.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 73vw;
   list-style: none;
   margin-block-start: 0;
+  padding-inline-start: 27vw;
   transition: top 1.5s ease-out;
 }
 
@@ -23,6 +27,8 @@
   padding: 20px;
 }
 
-.navbar .open {
+.menu-bottom {
   display: block;
+  height: 50px;
+  background-color: aqua;
 }
