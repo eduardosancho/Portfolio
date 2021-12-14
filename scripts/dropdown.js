@@ -14,5 +14,5 @@ function hideNav() {
 open.addEventListener('click', showNav);
 close.addEventListener('click', hideNav);
 sectionLinks.forEach((item) => {
-  item.addEventListener('click', hide);
+  item.addEventListener('click', hideNav);
 });
