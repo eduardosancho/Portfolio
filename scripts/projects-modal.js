@@ -13,9 +13,6 @@ const project_button = document.querySelector('.see-project');
 
 project_button.addEventListener('click', openPopup);
 
-
-
-
 function openPopup(){
 
     document.body.appendChild(div); 
@@ -26,8 +23,25 @@ function openPopup(){
 
 let div = document.createElement('div');
 div.id = 'content';
+div.className = 'note';
 div.innerHTML = '<p>CreateElement example</p>';
 
+const style = document.createElement('style');
+style.innerHTML = `
+    .note {
+        background-color: yellow;
+        color:red;
+        width: 90vw;
+        height: 90vh;
+        position: fixed;
+        z-index: 100000;
+        top: 100;
+        margin: 5vw;
+        border-radius: 20px;
+        text-align: center;
+    }
+    `;
+document.head.appendChild(style);
 
 
 //let projectOneModal = document.createElement('div');
