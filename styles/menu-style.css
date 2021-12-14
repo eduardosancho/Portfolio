@@ -13,10 +13,10 @@
   background-image: url(../images/image_geometry_menu_1.svg);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 73vw;
+  background-size: 85vw;
   list-style: none;
   margin-block-start: 0;
-  padding-inline-start: 27vw;
+  padding-inline-start: 15vw;
   transition: top 1.5s ease-out;
 }
 
