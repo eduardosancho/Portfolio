@@ -9,9 +9,31 @@ for (let i = 1; i <= 6; i++){
     projectList[i].thumbnail = projects[i].querySelector('.thumbnail');
 }
 
-let projectOneModal = document.createElement('div');
-projectOneModal.innerHTML = '<p>CreateElement example</p>';
-document.querySelector('.one').appendChild(projectOneModal);
+const project_button = document.querySelector('.see-project');
+
+project_button.addEventListener('click', openPopup);
+
+
+
+
+function openPopup(){
+
+    document.body.appendChild(div); 
+    div.style.top='0';
+
+
+}
+
+let div = document.createElement('div');
+div.id = 'content';
+div.innerHTML = '<p>CreateElement example</p>';
+
+
+
+//let projectOneModal = document.createElement('div');
+//projectOneModal.innerHTML = '<p>CreateElement example</p>';
+//projectOneModal.innerHTML = '<p>CreateElement example</p>';
+//document.querySelector('.one').appendChild(projectOneModal);
 
 
 
