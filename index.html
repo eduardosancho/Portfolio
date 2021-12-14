@@ -21,23 +21,26 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/style-main.css">
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="./styles/style-min-width-992px.css">
+    <link rel="stylesheet" media="screen and (max-width: 991px)" href="styles/menu-style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><a id="hello" href="#">Hello</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="menu">
+                <li class="menu-link"><a id="hello" href="#hello-section">Hello</a></li>
+                <li class="menu-link"><a href="#portfolio-section">Portfolio</a></li>
+                <li class="menu-link"><a href="#about-section">About</a></li>
+                <li class="menu-link"><a href="#contact-section">Contact</a></li>
+                <li class="close"><img src="images/times.svg" alt="Close menu icon"></li>
+                <li class="menu-bottom"></li>
             </ul>
-            <img class="toggleNav" src="images/ic_menu.svg" alt="hamburguer menu icon">
+            <img class="toggleNav open" src="images/ic_menu.svg" alt="hamburguer menu icon">
         </nav>
     </header>
 
     <main>
-        <section class="headline">
+        <section class="headline" id="hello-section">
             <div class="left">
                 <h1 id="author">
                     Eduardo <br>
@@ -56,7 +59,7 @@
             <div class="right"></div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="portfolio-section">
             <div id="projects-title">
                 <h1>Projects</h1>
             </div>
@@ -168,7 +171,7 @@
             <div id="image-geometry-5"></div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about-section">
             <div class="right">
                 <h1>About</h1>
                 <p>
@@ -215,7 +218,7 @@
             </div>
         </section>
 
-        <section class="contact-me">
+        <section class="contact-me" id="contact-section">
             <div class="contact-me-form">
                 <div class="top">
                     <h1> Get started</h1>
@@ -273,6 +276,7 @@
             </footer>
         </section>
     </main>
+    <script src="scripts/dropdown.js"></script>
 </body>
 
 </html>
