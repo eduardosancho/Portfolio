@@ -28,7 +28,12 @@
 }
 
 .menu-bottom {
-  display: block;
-  height: 50px;
-  background-color: aqua;
+  background-image: url(../images/image_geometry_menu_2.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: bottom;
+  height: 50vw;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
