@@ -3,10 +3,10 @@ const projects = document.querySelectorAll('.projects > div'); // one, two, thre
 
 const projectList = []; // Extract info to recycle
 for (let i = 1; i <= 6; i += 1) {
-  projectList[i] = {};
-  projectList[i].title = projects[i].querySelector('.project-summary > h2');
-  projectList[i].technologies = projects[i].querySelector('.technologies');
-  projectList[i].thumbnail = projects[i].querySelector('.thumbnail');
+    projectList[i] = {};
+    projectList[i].title = projects[i].querySelector('.project-summary > h2');
+    projectList[i].technologies = projects[i].querySelector('.technologies');
+    projectList[i].thumbnail = projects[i].querySelector('.thumbnail');
 }
 
 const projectOne = document.createElement('div'); // Create popup div
@@ -17,15 +17,17 @@ projectOne.innerHTML = `
 
 const projectOneDescription = document.createElement('p');
 projectOneDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
-const projectOneSeeLive = document.createElement('div');
-projectOneSeeLive.innerHTML = `
-<button class="see-live" type="button">
+
+const projectSeeLive = document.createElement('div');
+projectSeeLive.innerHTML = `
+<button class="see-live close-project" type="button">
     See live<img src="images/ic_download.svg" alt="download-icon">
 </button>
 `;
-const projectOneSeeSource = document.createElement('div');
-projectOneSeeSource.innerHTML = `
-<button class="see-source" type="button">
+
+const projectSeeSource = document.createElement('div');
+projectSeeSource.innerHTML = `
+<button class="see-source close-project" type="button">
     See source<img src="images/ic_github.svg" alt="github">
 </button>
 `;
@@ -66,23 +68,25 @@ style.innerHTML = `
     `;
 
 function openPopup() {
-  document.body.appendChild(projectOne);
-  projectOne.style.top = '0';
-  projectOne.appendChild(projectList[1].title.cloneNode(true));
-  projectOne.appendChild(projectList[1].technologies.cloneNode(true));
-  projectOne.appendChild(projectList[1].thumbnail.cloneNode(true));
-  projectOne.appendChild(projectOneDescription);
-  projectOne.appendChild(projectOneSeeLive);
-  projectOne.appendChild(projectOneSeeSource);
-  document.head.appendChild(style);
-  function closePopup() {
-    projectOne.style.top = '-100%';
-    document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup h2'));
-    document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
-    document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
-  }
-  const closeProject = document.querySelector('.close-project');
-  closeProject.addEventListener('click', closePopup); // Click to close
+    document.body.appendChild(projectOne);
+    projectOne.style.top = '0';
+    projectOne.appendChild(projectList[1].title.cloneNode(true));
+    projectOne.appendChild(projectList[1].technologies.cloneNode(true));
+    projectOne.appendChild(projectList[1].thumbnail.cloneNode(true));
+    projectOne.appendChild(projectOneDescription);
+    projectOne.appendChild(projectSeeLive);
+    projectOne.appendChild(projectSeeSource);
+    document.head.appendChild(style);
+    function closePopup() {
+        projectOne.style.top = '-100%';
+        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup h2'));
+        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
+        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
+    }
+    const closeProject = document.querySelectorAll('.close-project');
+    closeProject.forEach((item) => {
+        item.addEventListener('click', closePopup); // Click to close
+    })
 }
 
 const projectBtn = document.querySelector('.see-project');
