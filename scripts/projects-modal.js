@@ -12,23 +12,20 @@ for (let i = 1; i <= 6; i += 1) {
 const projectOne = document.createElement('div'); // Create popup div
 projectOne.className = 'show-popup';
 projectOne.innerHTML = `
-<div class="close-project"><img src="images/times.svg" alt="Close project icon"></div>
+<div class="popUpTop"><img class="close-project" src="images/times.svg" alt="Close project icon"></div>
 `;
 
 const projectOneDescription = document.createElement('p');
 projectOneDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
 
-const projectSeeLive = document.createElement('div');
-projectSeeLive.innerHTML = `
+const projectSeeLiveSource = document.createElement('div');
+projectSeeLiveSource.className = 'projectSee';
+projectSeeLiveSource.innerHTML = `
 <button class="see-live close-project" type="button">
-    See live<img src="images/ic_download.svg" alt="download-icon">
+<p>See live</p><img src="images/ic_link.svg" alt="download-icon">
 </button>
-`;
-
-const projectSeeSource = document.createElement('div');
-projectSeeSource.innerHTML = `
 <button class="see-source close-project" type="button">
-    See source<img src="images/ic_github.svg" alt="github">
+    <p>See source</p><img src="images/ic_github_white.svg" alt="github">
 </button>
 `;
 
@@ -37,7 +34,7 @@ style.innerHTML = `
     .show-popup {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         background-color: white;
         color: #1A2236;
         width: 100vw;
@@ -45,41 +42,102 @@ style.innerHTML = `
         position: fixed;
         z-index: 10;
         top: 100;
-        text-align: center;
         overflow-y: scroll !important;
         max-height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        font-size: 6vw;
+        padding-inline-start: 6vw;
+        float: left;
+    }
+
+    .show-popup .popUpTop {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    .show-popup h2 {
+        margin-bottom: 0.5rem;
     }
     
     .close-project {
-        align-self: flex-end;
-        margin: 2rem 2rem 0.5rem 2rem;
+        align-self: flex-start;
+        margin: 2rem 3rem 0.5rem 2rem;
+        float: right;
     }
     
     .show-popup .technologies {
         display: flex;
-        list-style: none;
+        align-items: center;
         padding-inline-start: 0;
-        padding: 2rem 4rem 2rem 4rem;
+        justify-content: space-between;
+        height: 10vw;
+        width: 90vw;
+        font-weight: 300;
+    }
+
+    .show-popup .technologies li {
+        list-style: none;
+        text-align: center;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        white-space: nowrap;
+        border: solid black 1px;
+        font-size: 3.5vw;
+        color: #1a2236;
+        width: 28vw;
     }
 
     .show-popup .thumbnail {
-        width: 100vw;
+        width: 90vw;
+        min-height: 59vw;
+    }
+
+    .show-popup .projectSee {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin: 0;
+        gap: 10px;
+        padding-right: 12vw;
+    }
+
+    .show-popup button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 80vw;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: white;
+
+    }
+
+    .show-popup button img {
+        margin: 0.5rem;
+        position: absolute;
+        right: 20vw;
+    }
+    .show-popup button p {
+        margin: 0.5rem;
     }
     `;
 
 function openPopup() {
     document.body.appendChild(projectOne);
     projectOne.style.top = '0';
-    projectOne.appendChild(projectList[1].title.cloneNode(true));
+    projectOne.querySelector('div').appendChild(projectList[1].title.cloneNode(true));
     projectOne.appendChild(projectList[1].technologies.cloneNode(true));
     projectOne.appendChild(projectList[1].thumbnail.cloneNode(true));
     projectOne.appendChild(projectOneDescription);
-    projectOne.appendChild(projectSeeLive);
-    projectOne.appendChild(projectSeeSource);
+    projectOne.appendChild(projectSeeLiveSource);
     document.head.appendChild(style);
     function closePopup() {
         projectOne.style.top = '-100%';
-        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup h2'));
+        document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
         document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
         document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
     }
