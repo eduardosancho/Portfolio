@@ -125,6 +125,11 @@ style.innerHTML = `
     .show-popup button p {
         margin: 0.5rem;
     }
+
+    @media only screen and (min-width: 992px) {
+        .show-popup .projectSee {
+            flex-direction: row;
+    }
     `;
 
 function openPopup() {
