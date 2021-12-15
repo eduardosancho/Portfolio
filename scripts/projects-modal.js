@@ -73,7 +73,7 @@ style.innerHTML = `
         padding-inline-start: 0;
         justify-content: space-between;
         height: 10vw;
-        width: 90vw;
+        width: 85vw;
         font-weight: 300;
     }
 
@@ -84,14 +84,15 @@ style.innerHTML = `
         padding-bottom: 0.7em;
         white-space: nowrap;
         border: solid black 1px;
-        font-size: 3.5vw;
+        font-size: 3vw;
         color: #1a2236;
-        width: 28vw;
+        width: 25vw;
     }
 
     .show-popup .thumbnail {
-        width: 90vw;
-        min-height: 59vw;
+        width: 88vw;
+        min-height: 53vw;
+        box-shadow: 0 0 50px 5px black inset;
     }
 
     .show-popup .projectSee {
