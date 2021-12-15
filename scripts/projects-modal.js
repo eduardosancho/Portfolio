@@ -14,13 +14,23 @@ project_button.addEventListener('click', openPopup); //Click to show
 function openPopup() {
     document.body.appendChild(projectOne);
     projectOne.style.top = '0';
-    projectOne.appendChild(projectList[1].title);
-    projectOne.appendChild(projectList[1].technologies);
-    projectOne.appendChild(projectList[1].thumbnail);
+    projectOne.appendChild(projectList[1].title.cloneNode(true));
+    projectOne.appendChild(projectList[1].technologies.cloneNode(true));
+    projectOne.appendChild(projectList[1].thumbnail.cloneNode(true));
     projectOne.appendChild(projectOneDescription);
     projectOne.appendChild(projectOneSeeLive);
     projectOne.appendChild(projectOneSeeSource);
-    document.head.appendChild(style);
+    document.head.appendChild(style);/* 
+    document.querySelector('.one .project-summary').removeChild(document.querySelector('.one .see-project'));
+ */
+    const close_project = document.querySelector('.close-project');
+    close_project.addEventListener('click', closePopup); //Click to close
+    function closePopup() {
+        projectOne.style.top = '-100%';
+        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup h2'));
+        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
+        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
+    };
 };
 
 let projectOne = document.createElement('div'); //Create popup div
@@ -28,6 +38,7 @@ projectOne.className = 'show-popup';
 projectOne.innerHTML = `
 <div class="close-project"><img src="images/times.svg" alt="Close project icon"></div>
 `;
+
 let projectOneDescription = document.createElement('p');
 projectOneDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
 let projectOneSeeLive = document.createElement('div');
@@ -67,23 +78,17 @@ style.innerHTML = `
         margin: 2rem 2rem 0.5rem 2rem;
     }
     
-    .technologies {
+    .show-popup .technologies {
         display: flex;
         list-style: none;
         padding-inline-start: 0;
-        padding: 0.5rem 2rem 0.5rem 2rem;
+        padding: 2rem 4rem 2rem 4rem;
     }
 
-    .thumbnail {
+    .show-popup .thumbnail {
         width: 100vw;
     }
     `;
-
-
-//let projectOneModal = document.createElement('div');
-//projectOneModal.innerHTML = '<p>CreateElement example</p>';
-//projectOneModal.innerHTML = '<p>CreateElement example</p>';
-//document.querySelector('.one').appendChild(projectOneModal);
 
 
 
