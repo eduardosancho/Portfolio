@@ -228,22 +228,39 @@
                         incididunt ut labore et dolore magna.
                     </p>
                 </div>
-                <form class="form" action="https://formspree.io/f/xwkyewre" method="post">
-                    <ul class="form-list">
-                        <li id="form-name">
-                            <label for="name">Your name</label>
-                            <input type="text" id="name" name="user_name" placeholder="John Doe" maxlength="30"
-                                required>
-                        </li>
-                        <li id="form-email">
-                            <label for="email">Your email</label>
-                            <input type="email" id="email" name="user_email" placeholder="abc@email.com" required>
-                        </li>
-                    </ul>
-                    <label id="msg-label" for="msg">Message</label>
-                    <textarea id="msg" name="message" placeholder="Enter your message here..." maxlength="500"
-                        required></textarea>
-                    <button type="submit" id="submit-form">Start collaboration</button>
+
+                <!-- action="https://formspree.io/f/xwkyewre" -->
+                <form action="signup.html" method="post" id="signup2">
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name2" name="name" placeholder="Enter your fullname" maxlength="30" />
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">Your email</label>
+                        <input type="text" id="email2" name="email" placeholder="Enter your email address" />
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <button type="submit" class="full">Start collaboration</button>
+                    </div>
+                </form>
+
+                <form action="signup.html" method="post" id="signup">
+                    <h1>Sign Up</h1>
+                    <div class="field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your fullname" />
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email address" />
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <button type="submit" class="full">Subscribe</button>
+                    </div>
                 </form>
             </div>
         </section>
