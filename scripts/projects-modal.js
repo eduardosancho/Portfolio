@@ -1,6 +1,12 @@
 /* const projects_section = document.querySelector('.projects'); // Entire section */
 const projects = document.querySelectorAll('.projects > div'); // one, two, three
 
+/* const projectThumbnail = document.createElement('div');
+projectThumbnail.innerHTML = `
+<img src="images/project_thumbnail_2.svg">
+`;
+document.querySelector('.end').appendChild(projectThumbnail); */
+
 const projectList = []; // Extract info to recycle
 for (let i = 1; i <= 6; i += 1) {
     projectList[i] = {};
@@ -9,14 +15,14 @@ for (let i = 1; i <= 6; i += 1) {
     projectList[i].thumbnail = projects[i].querySelector('.thumbnail');
 }
 
-const projectOne = document.createElement('div'); // Create popup div
-projectOne.className = 'show-popup';
-projectOne.innerHTML = `
+const projectPopUp = document.createElement('div'); // Create popup div
+projectPopUp.className = 'show-popup';
+projectPopUp.innerHTML = `
 <div class="popUpTop"><img class="close-project" src="images/times.svg" alt="Close project icon"></div>
 `;
 
-const projectOneDescription = document.createElement('p');
-projectOneDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
+const projectDescription = document.createElement('p');
+projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
 
 const projectSeeLiveSource = document.createElement('div');
 projectSeeLiveSource.className = 'projectSee';
@@ -132,26 +138,27 @@ style.innerHTML = `
     }
     `;
 
-function openPopup() {
-    document.body.appendChild(projectOne);
-    projectOne.style.top = '0';
-    projectOne.querySelector('div').appendChild(projectList[1].title.cloneNode(true));
-    projectOne.appendChild(projectList[1].technologies.cloneNode(true));
-    projectOne.appendChild(projectList[1].thumbnail.cloneNode(true));
-    projectOne.appendChild(projectOneDescription);
-    projectOne.appendChild(projectSeeLiveSource);
+function displayProject(num) {
+    document.body.appendChild(projectPopUp);
+    projectPopUp.style.top = '0';
+    projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
+    projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
+    projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
+    console.log('project info');
+    projectPopUp.appendChild(projectDescription);
+    projectPopUp.appendChild(projectSeeLiveSource);
     document.head.appendChild(style);
     function closePopup() {
-        projectOne.style.top = '-100%';
+        projectPopUp.style.top = '-100%';
         document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
         document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
         document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
+        console.log('close'); //ERASE ME
     }
     const closeProject = document.querySelectorAll('.close-project');
     closeProject.forEach((item) => {
         item.addEventListener('click', closePopup); // Click to close
     })
-}
 
-const projectBtn = document.querySelector('.see-project');
-projectBtn.addEventListener('click', openPopup); // Click to show
+    console.log('popup'); //ERASE ME
+}
