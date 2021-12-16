@@ -40,8 +40,7 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 }
 
 const form = document.querySelector("#signup");
-const form2 = document.querySelector("#signup2");
-console.log(form2.elements["email"]);
+/* const form2 = document.querySelector("#signup2"); */
 
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
@@ -60,7 +59,7 @@ form.addEventListener("submit", function (event) {
 	}
 });
 
-form2.addEventListener("submit", function (event) {
+/* form2.addEventListener("submit", function (event) {
 	// stop form submission
 	event.preventDefault();
 	console.log(form2.elements["email"]);
@@ -72,4 +71,4 @@ form2.addEventListener("submit", function (event) {
 	if (nameValid2 && emailValid2) {
 		alert("Demo only. No form was posted.");
 	}
-});
+}); */
