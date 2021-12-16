@@ -144,6 +144,24 @@ function displayProject(num) {
     projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
     projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
     projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
+
+    
+
+    /* switch (num) {
+        case 1:
+            //add class two to thumbnail element in popup
+            projectPopUp.querySelector('.thumbnail').className = 'one';
+            console.log(num);
+            break;
+        case 2:
+            projectPopUp.querySelector('.thumbnail').className = 'two';
+            console.log(num);
+            break;
+    } */
+    
+
+
+    console.log(projectPopUp.querySelector('.thumbnail'));
     console.log('project info');
     projectPopUp.appendChild(projectDescription);
     projectPopUp.appendChild(projectSeeLiveSource);
