@@ -23,7 +23,7 @@ function hasValue(input, message) {
 	return showSuccess(input);
 }
 
-function validateEmail(input, requiredMsg, invalidMsg) {
+function validateEmail(input, requiredMsg, invalidMsg, capitalsInEmail) {
 	// check if the value is not empty
 	if (!hasValue(input, requiredMsg)) {
 		return false;
@@ -35,16 +35,18 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 	const email = input.value.trim();
 	if (!emailRegex.test(email)) {
 		return showError(input, invalidMsg);
+	} else if (email != email.toLowerCase()) {
+		return showError(input, capitalsInEmail);
 	}
 	return true;
 }
 
 const form = document.querySelector("#signup");
-/* const form2 = document.querySelector("#signup2"); */
 
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
 const EMAIL_INVALID = "Please enter a correct email address format";
+const EMAIL_HASCAPITALS = "Please make sure your email is only in lower case";
 
 form.addEventListener("submit", function (event) {
 	// stop form submission
@@ -52,23 +54,9 @@ form.addEventListener("submit", function (event) {
 
 	// validate the form
 	let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
-	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID, EMAIL_HASCAPITALS);
 	// if valid, submit the form.
 	if (nameValid && emailValid) {
-		alert("Demo only. No form was posted.");
+		this.submit();
 	}
 });
-
-/* form2.addEventListener("submit", function (event) {
-	// stop form submission
-	event.preventDefault();
-	console.log(form2.elements["email"]);
-
-	// validate the form
-	let nameValid2 = hasValue(form2.elements["name"], NAME_REQUIRED);
-	let emailValid2 = validateEmail(form2.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
-	// if valid, submit the form.
-	if (nameValid2 && emailValid2) {
-		alert("Demo only. No form was posted.");
-	}
-}); */
