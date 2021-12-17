@@ -1,12 +1,11 @@
 const projects = document.querySelectorAll('.projects > div'); // one, two, three
 
-
 const projectList = []; // Extract info to recycle
 for (let i = 1; i <= 6; i += 1) {
-    projectList[i] = {};
-    projectList[i].title = projects[i].querySelector('.project-summary > h2');
-    projectList[i].technologies = projects[i].querySelector('.technologies');
-    projectList[i].thumbnail = projects[i].querySelector('.thumbnail');
+  projectList[i] = {};
+  projectList[i].title = projects[i].querySelector('.project-summary > h2');
+  projectList[i].technologies = projects[i].querySelector('.technologies');
+  projectList[i].thumbnail = projects[i].querySelector('.thumbnail');
 }
 
 const projectPopUp = document.createElement('div'); // Create popup div
@@ -41,7 +40,7 @@ style.innerHTML = `
         height: 100vh;
         position: fixed;
         z-index: 10;
-        top: 100;
+        top: -100%;
         overflow-y: scroll !important;
         max-height: 100vh;
         font-family: 'Poppins', sans-serif;
@@ -188,43 +187,47 @@ style.innerHTML = `
     `;
 
 function displayProject(num) {
-    document.body.appendChild(projectPopUp);
-    projectPopUp.style.top = '0';
-    projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
-    projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
-    projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
-    switch (num) {
-        case 1:
-            //add class two to thumbnail element in popup
-            projectPopUp.querySelector('.thumbnail').classList.add('one');
-            break;
-        case 2:
-            projectPopUp.querySelector('.thumbnail').classList.add('two');
-            break;
-        case 3:
-            projectPopUp.querySelector('.thumbnail').classList.add('three');
-            break;
-        case 4:
-            projectPopUp.querySelector('.thumbnail').classList.add('four');
-            break;
-        case 5:
-            projectPopUp.querySelector('.thumbnail').classList.add('five');
-            break;
-        case 6:
-            projectPopUp.querySelector('.thumbnail').classList.add('six');
-            break;
-    }
-    projectPopUp.appendChild(projectDescription);
-    projectPopUp.appendChild(projectSeeLiveSource);
-    document.head.appendChild(style);
-    function closePopup() {
-        projectPopUp.style.top = '-100%';
-        document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
-        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
-        document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
-    }
-    const closeProject = document.querySelectorAll('.close-project');
-    closeProject.forEach((item) => {
-        item.addEventListener('click', closePopup); // Click to close
-    })
+  document.body.appendChild(projectPopUp);
+  projectPopUp.style.top = '0';
+  projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
+  projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
+  projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
+  switch (num) {
+    case 1:
+      // add class two to thumbnail element in popup
+      projectPopUp.querySelector('.thumbnail').classList.add('one');
+      break;
+    case 2:
+      projectPopUp.querySelector('.thumbnail').classList.add('two');
+      break;
+    case 3:
+      projectPopUp.querySelector('.thumbnail').classList.add('three');
+      break;
+    case 4:
+      projectPopUp.querySelector('.thumbnail').classList.add('four');
+      break;
+    case 5:
+      projectPopUp.querySelector('.thumbnail').classList.add('five');
+      break;
+    case 6:
+      projectPopUp.querySelector('.thumbnail').classList.add('six');
+      break;
+    default:
+      break;
+  }
+  projectPopUp.appendChild(projectDescription);
+  projectPopUp.appendChild(projectSeeLiveSource);
+  document.head.appendChild(style);
+  function closePopup() {
+    projectPopUp.style.top = '-100%';
+    document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
+    document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
+    document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
+  }
+  const closeProject = document.querySelectorAll('.close-project');
+  closeProject.forEach((item) => {
+    item.addEventListener('click', closePopup); // Click to close
+  });
 }
+
+displayProject();
