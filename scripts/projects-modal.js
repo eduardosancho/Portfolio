@@ -21,10 +21,10 @@ projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipis
 const projectSeeLiveSource = document.createElement('div');
 projectSeeLiveSource.className = 'projectSee';
 projectSeeLiveSource.innerHTML = `
-<button class="see-live close-project" type="button">
+<button class="see-live close-project" type="button" onclick="window.location.href='https://eduardosancho.github.io/setup_and_mobile_version_skeleton/'">
 <p>See live</p><img src="images/ic_link.svg" alt="download-icon">
 </button>
-<button class="see-source close-project" type="button">
+<button class="see-source close-project" type="button" onclick="window.location.href='https://github.com/eduardosancho/setup_and_mobile_version_skeleton'">
     <p>See source</p><img src="images/ic_github_white.svg" alt="github">
 </button>
 `;
