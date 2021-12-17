@@ -1,6 +1,3 @@
-const name = document.querySelector("#name");
-const name = document.querySelector("#email");
-
 function storeData() {
   const contactFormData = {
     name: document.getElementById('name').value,
@@ -23,6 +20,24 @@ document.getElementById('msg').onchange = function saveLocalByMessage() {
   return storeData();
 };
 
-function displayData (){
-  console.log(name);
+const localObject = localStorage.getItem('contactInfo');
+
+if (localObject) {
+  const localName = JSON.parse(localObject).name;
+  const localEmail = JSON.parse(localObject).email;
+  const localMessage = JSON.parse(localObject).message;
+  if (localName) {
+    const nameid = document.querySelector('#name');
+    nameid.value = JSON.parse(localObject).name;
+  }
+
+  if (localEmail) {
+    const emailid = document.querySelector('#email');
+    emailid.value = JSON.parse(localObject).email;
+  }
+
+  if (localMessage) {
+    const messageid = document.querySelector('#msg');
+    messageid.value = JSON.parse(localObject).message;
+  }
 }
