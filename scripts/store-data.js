@@ -11,6 +11,18 @@ function storeData() {
   localStorage.setItem('contactInfo', JSON.stringify(contactFormData));
 }
 
+document.getElementById('name').onchange = function saveLocalByName() {
+  return storeData();
+};
+
+document.getElementById('email').onchange = function saveLocalByEmail() {
+  return storeData();
+};
+
+document.getElementById('msg').onchange = function saveLocalByMessage() {
+  return storeData();
+};
+
 function displayData (){
   console.log(name);
 }
