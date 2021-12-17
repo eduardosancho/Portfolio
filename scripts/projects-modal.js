@@ -47,13 +47,12 @@ style.innerHTML = `
         font-family: 'Poppins', sans-serif;
         font-size: 6vw;
         padding-inline-start: 6vw;
-        float: left;
     }
 
     .show-popup .popUpTop {
         display: flex;
         flex-direction: row-reverse;
-        width: 100vw;
+        width: 90vw;
         justify-content: space-between;
     }
 
@@ -63,8 +62,7 @@ style.innerHTML = `
     
     .close-project {
         align-self: flex-start;
-        margin: 2rem 3rem 0.5rem 2rem;
-        float: right;
+        margin: 1.5rem 1.5rem 0.5rem 0;
     }
     
     .show-popup .technologies {
@@ -145,16 +143,47 @@ style.innerHTML = `
 
     .show-popup button img {
         margin: 0.5rem;
-        height: 3vw;
+        height: 4vw;
     }
     .show-popup button p {
         margin: 0.5rem;
     }
 
     @media only screen and (min-width: 992px) {
+        .show-popup h2 {
+            font-size: 4vw;
+        }
+
+        .show-popup .technologies {
+            width: 40vw;
+            height: 7vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
+
+        .show-popup .technologies li {
+            font-size: 0.9rem;
+            width: 12vw;
+        }
+
+        .show-popup .thumbnail {
+            display: initial;
+        }
+
         .show-popup .projectSee {
             flex-direction: row;
-            max-width: 90vw;
+            max-width: 70vw;
+        }
+
+        .show-popup button img {
+        height: 2.5vw;
+    }
+
+        .show-popup p {
+        max-width: 70vw;
+        font-size: 2vw;
+        margin: 5rem 2rem 5rem 8vw;
+        }
     }
     `;
 
