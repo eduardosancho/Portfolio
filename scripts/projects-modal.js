@@ -115,11 +115,17 @@ style.innerHTML = `
         background-image: url(../images/project_thumbnail_6.svg);
     }
 
+    .show-popup p {
+        font-size: 4vw;
+        max-width: 85vw;
+    }
+
     .show-popup .projectSee {
         display: flex;
         flex-direction: column;
         align-self: center;
         margin: 0;
+        margin-bottom: 7vw;
         gap: 10px;
         padding-right: 12vw;
     }
@@ -139,8 +145,7 @@ style.innerHTML = `
 
     .show-popup button img {
         margin: 0.5rem;
-        position: absolute;
-        right: 20vw;
+        height: 3vw;
     }
     .show-popup button p {
         margin: 0.5rem;
@@ -149,6 +154,7 @@ style.innerHTML = `
     @media only screen and (min-width: 992px) {
         .show-popup .projectSee {
             flex-direction: row;
+            max-width: 90vw;
     }
     `;
 
@@ -158,9 +164,6 @@ function displayProject(num) {
     projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
     projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
     projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
-
-    
-
     switch (num) {
         case 1:
             //add class two to thumbnail element in popup
@@ -182,11 +185,6 @@ function displayProject(num) {
             projectPopUp.querySelector('.thumbnail').classList.add('six');
             break;
     }
-    
-
-
-    console.log(projectPopUp.querySelector('.thumbnail'));
-    console.log('project info');
     projectPopUp.appendChild(projectDescription);
     projectPopUp.appendChild(projectSeeLiveSource);
     document.head.appendChild(style);
@@ -195,12 +193,9 @@ function displayProject(num) {
         document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop h2'));
         document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .technologies'));
         document.querySelector('.show-popup').removeChild(document.querySelector('.show-popup .thumbnail'));
-        console.log('close'); //ERASE ME
     }
     const closeProject = document.querySelectorAll('.close-project');
     closeProject.forEach((item) => {
         item.addEventListener('click', closePopup); // Click to close
     })
-
-    console.log('popup'); //ERASE ME
 }
