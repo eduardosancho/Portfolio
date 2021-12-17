@@ -1,11 +1,5 @@
-/* const projects_section = document.querySelector('.projects'); // Entire section */
 const projects = document.querySelectorAll('.projects > div'); // one, two, three
 
-/* const projectThumbnail = document.createElement('div');
-projectThumbnail.innerHTML = `
-<img src="images/project_thumbnail_2.svg">
-`;
-document.querySelector('.end').appendChild(projectThumbnail); */
 
 const projectList = []; // Extract info to recycle
 for (let i = 1; i <= 6; i += 1) {
@@ -101,6 +95,26 @@ style.innerHTML = `
         box-shadow: 0 0 50px 5px black inset;
     }
 
+    .show-popup .two {
+        background-image: url(../images/project_thumbnail_2.svg);
+    }
+
+    .show-popup .three {
+        background-image: url(../images/project_thumbnail_3.svg);
+    }
+
+    .show-popup .four {
+        background-image: url(../images/project_thumbnail_4.svg);
+    }
+
+    .show-popup .five {
+        background-image: url(../images/project_thumbnail_5.svg);
+    }
+
+    .show-popup .six {
+        background-image: url(../images/project_thumbnail_6.svg);
+    }
+
     .show-popup .projectSee {
         display: flex;
         flex-direction: column;
@@ -147,17 +161,27 @@ function displayProject(num) {
 
     
 
-    /* switch (num) {
+    switch (num) {
         case 1:
             //add class two to thumbnail element in popup
-            projectPopUp.querySelector('.thumbnail').className = 'one';
-            console.log(num);
+            projectPopUp.querySelector('.thumbnail').classList.add('one');
             break;
         case 2:
-            projectPopUp.querySelector('.thumbnail').className = 'two';
-            console.log(num);
+            projectPopUp.querySelector('.thumbnail').classList.add('two');
             break;
-    } */
+        case 3:
+            projectPopUp.querySelector('.thumbnail').classList.add('three');
+            break;
+        case 4:
+            projectPopUp.querySelector('.thumbnail').classList.add('four');
+            break;
+        case 5:
+            projectPopUp.querySelector('.thumbnail').classList.add('five');
+            break;
+        case 6:
+            projectPopUp.querySelector('.thumbnail').classList.add('six');
+            break;
+    }
     
 
 
