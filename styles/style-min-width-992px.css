@@ -126,6 +126,8 @@ header {
   grid-column: 1/4;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .three {
@@ -143,6 +145,8 @@ header {
   grid-column: 6/9;
   overflow: hidden;
   background-image: url(../images/project_thumbnail_4.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .five {
