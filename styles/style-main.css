@@ -106,7 +106,7 @@ header {
 
 #submit-form {
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 0;
   margin-left: 0;
   width: 100%;
   height: 60px;
@@ -442,11 +442,20 @@ textarea {
   border-radius: 5px;
 }
 
+.success {
+  border: solid lightgreen 1px;
+}
+
+.error {
+  border: solid red 1px;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
   background-color: #1a2236;
   padding-top: 32px;
+  margin-top: 80px;
 }
 
 #resume {
