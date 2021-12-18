@@ -1,18 +1,18 @@
 // show a message with a type of the input
 function showMessage(input, message, type, num) {
   // get the small element and set the message
+  const msg1 = document.querySelector('.small-1');
+  const msg2 = document.querySelector('.small-2');
+  const msg3 = document.querySelector('.small-3');
 
   switch (num) {
     case 1:
-      const msg1 = document.querySelector('.small-1');
       msg1.innerText = message;
       break;
     case 2:
-      const msg2 = document.querySelector('.small-2');
       msg2.innerText = message;
       break;
     case 3:
-      const msg3 = document.querySelector('.small-3');
       msg3.innerText = message;
       break;
     default:
@@ -64,7 +64,7 @@ const EMAIL_INVALID = 'Please enter a correct email address format';
 const EMAIL_HASCAPITALS = 'Please make sure your email is only in lower case';
 const MSG_INVALID = 'Please enter a message';
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', function clickSubmit(event) {
   // stop form submission
   event.preventDefault();
 
