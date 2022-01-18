@@ -6,7 +6,7 @@
     }
   },
   "extends": ["development"],
-  "formatters": ["stylish", "html"],
+  "formatters": ["stylish"],
   "hints": [
     "button-type",
     "disown-opener",
