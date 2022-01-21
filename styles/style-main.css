@@ -163,7 +163,7 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  background-image: url(../images/project_thumbnail_1.svg);
+  background-image: url(../images/project_screenshot_1.png);
   transition-property: background-size;
   transition-duration: 1s;
 }
