@@ -16,7 +16,7 @@ https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?n
 ## Getting Started
 
 Live preview of the website, published using GithubPages:
-https://eduardosancho.github.io/setup_and_mobile_version_skeleton/
+https://eduardosancho.github.io/Portfolio/
 
 
 To get a local copy up and running follow these simple example steps.
