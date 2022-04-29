@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# SetUp and Mobile Version Skeleton
+# Portfolio of Projects
 
 ~~~
 -Personal Portfolio based on Template #5 of Figma.
