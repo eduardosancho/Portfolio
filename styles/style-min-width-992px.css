@@ -7,13 +7,17 @@ header {
 }
 
 .navbar {
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 0;
-  padding: 1vw;
+  padding: 2px;
+  padding-left: 150px;
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: whitesmoke;
   z-index: 10;
+  background-image: url(../images/mobile_geometry_1.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
 }
 
 .navbar img {
@@ -22,7 +26,7 @@ header {
 
 .navbar ul {
   visibility: visible;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 40vw;
   padding-inline-start: 0;
 }
@@ -31,11 +35,11 @@ header {
   background-image: url(../images/Rectangle\ 52.png);
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: 3.5vw;
+  background-size: 40px;
 }
 
 .navbar a {
-  font-size: 2.2vw;
+  font-size: 1.5rem;
 }
 
 .headline {
@@ -71,6 +75,7 @@ header {
   width: 25vw;
   font-size: 2vw;
   padding: 1.5vw;
+  text-align: center;
 }
 
 .headline .right {

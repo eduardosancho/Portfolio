@@ -123,13 +123,6 @@ header {
   border: solid #1a2236 3px;
 }
 
-#start-collaboration:active,
-#submit-form:active {
-  background-color: whitesmoke;
-  color: rgb(14, 14, 68);
-  border: solid #1a2236 3px;
-}
-
 .headline .right {
   display: none;
 }
