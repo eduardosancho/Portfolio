@@ -32,6 +32,9 @@ I want to invite you take a sneak peek at my work. Feel free to open my projects
 - Major languages: HTML, CSS and JavaScript
 ## Getting Started
 
+Live preview of the website, published using GithubPages:
+https://eduardosancho.github.io/Portfolio/
+
 To get a local copy up and running follow these simple example steps.
 
 1. Type in your terminal `$ git clone https://github.com/eduardosancho/Portfolio.git` to clone this repo.
