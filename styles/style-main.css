@@ -162,14 +162,8 @@ header {
   height: 60vw;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
-  background-image: url(../images/project_screenshot_1.png);
-  transition-property: background-size;
-  transition-duration: 1s;
-}
-
-.thumbnail:hover {
-  background-size: 105%;
+  background-position: top;
+  background-image: url(../images/projects/stock-thumbnail.png);
 }
 
 .two .thumbnail {
@@ -224,7 +218,9 @@ header {
   white-space: nowrap;
   background-color: #98dede;
   font-size: 3.5vw;
+  font-weight: bold;
   color: #1a2236;
+  border-radius: 5px;
 }
 
 .see-project {

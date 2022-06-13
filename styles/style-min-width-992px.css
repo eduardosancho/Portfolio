@@ -117,8 +117,10 @@ header {
 .one {
   grid-row: 1/2;
   grid-column: 4/10;
+  background-size: cover;
+  background-position: top;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_1.svg);
+  background-image: url(../images/projects/stock-thumbnail.png);
 }
 
 .two {
@@ -221,7 +223,6 @@ header {
 .one h2 {
   flex: 0;
   background-color: #1a2236;
-  width: 11ch;
   font-size: 4.1vw;
   font-weight: 700;
   white-space: nowrap;
