@@ -360,6 +360,11 @@ header {
   font-size: 50px;
   font-weight: 400;
   margin-top: 106px;
+  margin-bottom: 0;
+}
+
+.joke {
+  margin-top: 5px;
 }
 
 .form {
