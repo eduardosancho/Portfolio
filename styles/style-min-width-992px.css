@@ -2,10 +2,18 @@ header {
   background-image: none;
 }
 
+#hello-section {
+  margin-top: 40px;
+}
+
 .navbar {
   justify-content: center;
   margin-bottom: 0;
   padding: 1vw;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  z-index: 10;
 }
 
 .navbar img {
