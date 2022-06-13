@@ -7,6 +7,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
+  height: 50px;
 }
 
 .navbar {
@@ -19,13 +20,15 @@ header {
 
 .toggleNav {
   padding: 20px;
-  background-color: white;
-  transition: background-color 2s, transform 1s;
+  background-color: #add8e6;
+  transition: background-color 0.5s;
+  border-radius: 35%;
+  position: fixed;
+  top: 0;
 }
 
 .toggleNav:hover {
-  background-color: gray;
-  transform: rotate(-180deg);
+  background-color: #4a98b3;
 }
 
 .navbar ul {
@@ -120,13 +123,6 @@ header {
   border: solid #1a2236 3px;
 }
 
-#start-collaboration:active,
-#submit-form:active {
-  background-color: whitesmoke;
-  color: rgb(14, 14, 68);
-  border: solid #1a2236 3px;
-}
-
 .headline .right {
   display: none;
 }
@@ -167,11 +163,11 @@ header {
 }
 
 .two .thumbnail {
-  background-image: url(../images/project_thumbnail_2.svg);
+  background-image: url(../images/projects/leaderboard-thumbnail.png);
 }
 
 .three .thumbnail {
-  background-image: url(../images/project_thumbnail_3.svg);
+  background-image: url(../images/projects/yugioh-thumbnail.png);
 }
 
 .four .thumbnail {
@@ -183,7 +179,7 @@ header {
 }
 
 .six .thumbnail {
-  background-image: url(../images/project_thumbnail_6.svg);
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .project-summary {
@@ -234,6 +230,13 @@ header {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  transition: background-color 0.5s;
+}
+
+.see-project:hover {
+  background-color: whitesmoke;
+  color: #1a2236;
+  border: solid whitesmoke 3px;
 }
 
 #image-geometry-2,
@@ -318,18 +321,21 @@ header {
   background-image: url(../images/ic_languages_mob.png);
   grid-row: 1/2;
   background-color: #1c528a;
+  background-size: 30%;
 }
 
 .frameworks {
   background-image: url(../images/ic_framework.png);
   grid-row: 2/3;
   background-color: #e2505c;
+  background-size: 30%;
 }
 
 .skills {
   background-image: url(../images/ic_skills.png);
   grid-row: 3/4;
   background-color: #febf52;
+  background-size: 30%;
 }
 
 .dots-tile {

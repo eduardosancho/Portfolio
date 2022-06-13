@@ -2,10 +2,22 @@ header {
   background-image: none;
 }
 
+#hello-section {
+  margin-top: 40px;
+}
+
 .navbar {
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 0;
-  padding: 1vw;
+  padding: 2px;
+  padding-left: 150px;
+  width: 100%;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 10;
+  background-image: url(../images/mobile_geometry_1.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
 }
 
 .navbar img {
@@ -14,7 +26,7 @@ header {
 
 .navbar ul {
   visibility: visible;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 40vw;
   padding-inline-start: 0;
 }
@@ -23,11 +35,11 @@ header {
   background-image: url(../images/Rectangle\ 52.png);
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: 3.5vw;
+  background-size: 40px;
 }
 
 .navbar a {
-  font-size: 2.2vw;
+  font-size: 1.5rem;
 }
 
 .headline {
@@ -63,6 +75,7 @@ header {
   width: 25vw;
   font-size: 2vw;
   padding: 1.5vw;
+  text-align: center;
 }
 
 .headline .right {
@@ -126,17 +139,17 @@ header {
 .two {
   grid-row: 3/6;
   grid-column: 1/4;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_2.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-image: url(../images/projects/leaderboard-thumbnail.png);
 }
 
 .three {
   grid-row: 6/10;
   grid-column: 1/6;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_3.svg);
+  background-image: url(../images/projects/yugioh-thumbnail.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0);
@@ -162,7 +175,8 @@ header {
   grid-row: 2/5;
   grid-column: 7/10;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_6.svg);
+  background-size: cover;
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .one .project-summary {
@@ -262,7 +276,6 @@ header {
 .two h2 {
   flex: 0;
   background-color: #1a2236;
-  width: 11ch;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
@@ -300,7 +313,6 @@ header {
 .three h2 {
   flex: 0;
   background-color: #1a2236;
-  width: 11ch;
   font-size: 3.5vw;
   font-weight: 700;
   white-space: nowrap;
@@ -340,7 +352,6 @@ header {
 .six h2 {
   flex: 0;
   background-color: #1a2236;
-  width: 11ch;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
