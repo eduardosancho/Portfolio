@@ -162,14 +162,8 @@ header {
   height: 60vw;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
-  background-image: url(../images/project_thumbnail_1.svg);
-  transition-property: background-size;
-  transition-duration: 1s;
-}
-
-.thumbnail:hover {
-  background-size: 105%;
+  background-position: top;
+  background-image: url(../images/projects/stock-thumbnail.png);
 }
 
 .two .thumbnail {
@@ -224,7 +218,9 @@ header {
   white-space: nowrap;
   background-color: #98dede;
   font-size: 3.5vw;
+  font-weight: bold;
   color: #1a2236;
+  border-radius: 5px;
 }
 
 .see-project {
@@ -278,25 +274,8 @@ header {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  padding: 2vw;
-  margin: 16px;
-}
-
-@keyframes pulsing {
-  from {
-    font-size: 16px;
-  }
-
-  to {
-    font-size: 20px;
-  }
-}
-
-#get-my-cv:hover {
-  animation-name: pulsing, pulsing-2;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  padding: 15px;
+  margin: 15px;
 }
 
 .knowledge {
@@ -377,6 +356,11 @@ header {
   font-size: 50px;
   font-weight: 400;
   margin-top: 106px;
+  margin-bottom: 0;
+}
+
+.joke {
+  margin-top: 5px;
 }
 
 .form {
