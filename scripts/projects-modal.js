@@ -31,7 +31,6 @@ projectOneSeeLiveSource.innerHTML = `
 const projectDescription = document.createElement('p');
 projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
 
-
 const projectSeeLiveSource = document.createElement('div');
 projectSeeLiveSource.className = 'projectSee';
 projectSeeLiveSource.innerHTML = `
@@ -211,7 +210,7 @@ function displayProject(num) {
     case 1:
       // add class two to thumbnail element in popup
       projectPopUp.querySelector('.thumbnail').classList.add('one');
-      projectPopUp.appendChild(projectOneDescription);  //Add description
+      projectPopUp.appendChild(projectOneDescription); // Add description
       projectPopUp.appendChild(projectOneSeeLiveSource);
       break;
     case 2:
