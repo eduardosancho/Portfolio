@@ -1,6 +1,6 @@
-const projects = document.querySelectorAll('.projects > div'); // one, two, three
+const projects = document.querySelectorAll('.projects > div'); // find all projects in the DOM
 
-const projectList = []; // Extract info to recycle
+const projectList = []; // Extract info to reuse
 for (let i = 1; i <= 6; i += 1) {
   projectList[i] = {};
   projectList[i].title = projects[i].querySelector('.project-summary > h2');
@@ -14,8 +14,23 @@ projectPopUp.innerHTML = `
 <div class="popUpTop"><img class="close-project" src="images/times.svg" alt="Close project icon"></div>
 `;
 
+const projectOneDescription = document.createElement('p');
+projectOneDescription.textContent = 'Damn boy';
+
+const projectOneSeeLiveSource = document.createElement('div');
+projectOneSeeLiveSource.className = 'projectSee';
+projectOneSeeLiveSource.innerHTML = `
+  <button class="see-live close-project" type="button" onclick="window.open('https://sad-edison-40e613.netlify.app/'); return false;">
+    <p>See live</p><img src="images/ic_link.svg" alt="download-icon">
+  </button>
+  <button class="see-source close-project" type="button" onclick="window.open('https://github.com/eduardosancho/stock-data'); return false;">
+    <p>See source</p><img src="images/ic_github_white.svg" alt="github">
+  </button>
+`;
+
 const projectDescription = document.createElement('p');
 projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.';
+
 
 const projectSeeLiveSource = document.createElement('div');
 projectSeeLiveSource.className = 'projectSee';
@@ -196,6 +211,8 @@ function displayProject(num) {
     case 1:
       // add class two to thumbnail element in popup
       projectPopUp.querySelector('.thumbnail').classList.add('one');
+      projectPopUp.appendChild(projectOneDescription);  //Add description
+      projectPopUp.appendChild(projectOneSeeLiveSource);
       break;
     case 2:
       projectPopUp.querySelector('.thumbnail').classList.add('two');
