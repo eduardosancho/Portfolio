@@ -170,7 +170,8 @@ header {
 }
 
 .two .thumbnail {
-  background-image: url(../images/project_thumbnail_2.svg);
+  background-position: center;
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .three .thumbnail {
@@ -328,18 +329,21 @@ header {
   background-image: url(../images/ic_languages_mob.png);
   grid-row: 1/2;
   background-color: #1c528a;
+  background-size: 30%;
 }
 
 .frameworks {
   background-image: url(../images/ic_framework.png);
   grid-row: 2/3;
   background-color: #e2505c;
+  background-size: 30%;
 }
 
 .skills {
   background-image: url(../images/ic_skills.png);
   grid-row: 3/4;
   background-color: #febf52;
+  background-size: 30%;
 }
 
 .dots-tile {

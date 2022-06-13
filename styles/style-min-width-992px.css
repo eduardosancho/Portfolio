@@ -134,8 +134,10 @@ header {
 .two {
   grid-row: 3/6;
   grid-column: 1/4;
+  background-size: auto;
+  background-position: center;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_2.svg);
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .three {
