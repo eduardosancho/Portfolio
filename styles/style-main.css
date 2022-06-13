@@ -163,8 +163,7 @@ header {
 }
 
 .two .thumbnail {
-  background-position: center;
-  background-image: url(../images/projects/budget-thumbnail.png);
+  background-image: url(../images/projects/leaderboard-thumbnail.png);
 }
 
 .three .thumbnail {
@@ -180,7 +179,7 @@ header {
 }
 
 .six .thumbnail {
-  background-image: url(../images/project_thumbnail_6.svg);
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .project-summary {
