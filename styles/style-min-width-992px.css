@@ -149,7 +149,7 @@ header {
   grid-row: 6/10;
   grid-column: 1/6;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_3.svg);
+  background-image: url(../images/projects/yugioh-thumbnail.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0);
@@ -274,7 +274,6 @@ header {
 .two h2 {
   flex: 0;
   background-color: #1a2236;
-  width: 11ch;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
@@ -312,7 +311,6 @@ header {
 .three h2 {
   flex: 0;
   background-color: #1a2236;
-  width: 11ch;
   font-size: 3.5vw;
   font-weight: 700;
   white-space: nowrap;
@@ -352,7 +350,6 @@ header {
 .six h2 {
   flex: 0;
   background-color: #1a2236;
-  width: 11ch;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
