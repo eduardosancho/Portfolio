@@ -15,15 +15,15 @@ projectPopUp.innerHTML = `
 `;
 
 const projectOneDescription = document.createElement('p');
-projectOneDescription.textContent = 'Damn boy';
+projectOneDescription.textContent = 'Mobile app that displays updated stock data from Financial Modelig Prep API.';
 
 const projectOneSeeLiveSource = document.createElement('div');
 projectOneSeeLiveSource.className = 'projectSee';
 projectOneSeeLiveSource.innerHTML = `
-  <button class="see-live close-project" type="button" onclick="window.open('https://sad-edison-40e613.netlify.app/'); return false;">
+  <button class="see-live" type="button" onclick="window.open('https://sad-edison-40e613.netlify.app/'); return false;">
     <p>See live</p><img src="images/ic_link.svg" alt="download-icon">
   </button>
-  <button class="see-source close-project" type="button" onclick="window.open('https://github.com/eduardosancho/stock-data'); return false;">
+  <button class="see-source" type="button" onclick="window.open('https://github.com/eduardosancho/stock-data'); return false;">
     <p>See source</p><img src="images/ic_github_white.svg" alt="github">
   </button>
 `;
@@ -34,10 +34,10 @@ projectDescription.textContent = 'Lorem ipsum dolor sit amet, consectetur adipis
 const projectSeeLiveSource = document.createElement('div');
 projectSeeLiveSource.className = 'projectSee';
 projectSeeLiveSource.innerHTML = `
-<button class="see-live close-project" type="button" onclick="window.location.href='https://eduardosancho.github.io/setup_and_mobile_version_skeleton/'">
+<button class="see-live" type="button" onclick="window.location.href='https://eduardosancho.github.io/setup_and_mobile_version_skeleton/'">
 <p>See live</p><img src="images/ic_link.svg" alt="download-icon">
 </button>
-<button class="see-source close-project" type="button" onclick="window.location.href='https://github.com/eduardosancho/setup_and_mobile_version_skeleton'">
+<button class="see-source" type="button" onclick="window.location.href='https://github.com/eduardosancho/setup_and_mobile_version_skeleton'">
     <p>See source</p><img src="images/ic_github_white.svg" alt="github">
 </button>
 `;
@@ -59,13 +59,14 @@ style.innerHTML = `
         max-height: 100vh;
         font-family: 'Poppins', sans-serif;
         font-size: 6vw;
-        padding-inline-start: 6vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     .show-popup .popUpTop {
         display: flex;
         flex-direction: row-reverse;
-        width: 90vw;
+        width: 95vw;
         justify-content: space-between;
     }
 
@@ -75,7 +76,15 @@ style.innerHTML = `
     
     .close-project {
         align-self: flex-start;
-        margin: 1.5rem 1.5rem 0.5rem 0;
+        height: 30px;
+        margin: 25px;
+        padding: 25px;
+        border-radius: 50%;
+        transition: background-color 0.5s;
+    }
+
+    .close-project:hover {
+        background-color: antiquewhite;
     }
     
     .show-popup .technologies {
@@ -151,7 +160,13 @@ style.innerHTML = `
         font-size: 1.2rem;
         font-weight: 500;
         background-color: white;
+        transition: background-color 0.5s;
+    }
 
+    .show-popup button:hover {
+        background-color: #1a2236;
+  color: whitesmoke;
+  border: solid whitesmoke 2px;
     }
 
     .show-popup button img {
@@ -194,12 +209,13 @@ style.innerHTML = `
 
         .show-popup p {
         max-width: 70vw;
-        font-size: 2vw;
+        font-size: 3vw;
         margin: 5rem 2rem 5rem 8vw;
         }
     }
     `;
 
+// eslint-disable-next-line no-unused-vars
 function displayProject(num) {
   document.body.appendChild(projectPopUp);
   projectPopUp.style.top = '0';
@@ -245,5 +261,3 @@ function displayProject(num) {
     item.addEventListener('click', closePopup); // Click to close
   });
 }
-
-displayProject();
