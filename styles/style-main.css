@@ -130,7 +130,7 @@ header {
 .projects {
   margin-top: 20px;
   display: grid;
-  grid-template-rows: 99px repeat(6, 120vw);
+  grid-template-rows: 99px repeat(6, 114vw);
   grid-gap: 0;
 }
 
@@ -157,7 +157,7 @@ header {
 .thumbnail {
   height: 60vw;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
   background-image: url(../images/projects/stock-thumbnail.png);
 }
@@ -171,11 +171,11 @@ header {
 }
 
 .four .thumbnail {
-  background-image: url(../images/project_thumbnail_4.svg);
+  background-image: url(../images/projects/reservify-thumbnail.png);
 }
 
 .five .thumbnail {
-  background-image: url(../images/project_thumbnail_5.svg);
+  background-image: url(../images/projects/recipes-thumbnail.png);
 }
 
 .six .thumbnail {
@@ -183,8 +183,10 @@ header {
 }
 
 .project-summary {
+  height: 50vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   padding-inline-start: 4vw;
@@ -192,14 +194,12 @@ header {
 }
 
 .project-summary h2 {
-  flex: 1 1 100%;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 5vw;
   margin-bottom: 0;
+  line-height: 20px;
 }
 
 .project-summary ul {
-  flex: 1 1 100%;
   display: flex;
   justify-content: space-between;
   padding-inline-start: 0;
@@ -209,7 +209,8 @@ header {
 .project-summary li {
   list-style: none;
   text-align: center;
-  padding-top: 0.7em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   width: 28vw;
   white-space: nowrap;
   background-color: #98dede;
@@ -220,6 +221,7 @@ header {
 }
 
 .see-project {
+  align-self: flex-start;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -228,9 +230,13 @@ header {
   border: solid white;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 3vw;
   font-weight: 500;
   transition: background-color 0.5s;
+}
+
+.see-project img {
+  width: 3.5vw;
 }
 
 .see-project:hover {

@@ -159,16 +159,16 @@ header {
   grid-row: 10/12;
   grid-column: 6/9;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_4.svg);
+  background-image: url(../images/projects/reservify-thumbnail.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .five {
   grid-row: 5/7;
   grid-column: 7/10;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_5.svg);
+  background-image: url(../images/projects/recipes-thumbnail.png);
 }
 
 .six {
@@ -179,35 +179,44 @@ header {
   background-image: url(../images/projects/budget-thumbnail.png);
 }
 
-.one .project-summary {
-  transform: translateY(29vw);
+.see-project {
+  white-space: nowrap;
+}
+
+.see-project img {
+  width: 70%;
+}
+
+.project-summary {
   background-color: rgba(0, 0, 0, 0);
   transition: transform 1s, background-color 1s;
+}
+
+.one .project-summary {
+  transform: translateY(28vw);
   padding-bottom: 10vw;
+  height: 60%;
 }
 
 .two .project-summary {
-  transform: translateY(16vw);
-  background-color: rgba(0, 0, 0, 0);
-  transition: transform 1s, background-color 1s;
+  transform: translateY(15vw);
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
+  height: 65%;
 }
 
 .three .project-summary {
-  transform: translateY(24vw);
-  background-color: rgba(0, 0, 0, 0);
-  transition: transform 1s, background-color 1s;
+  transform: translateY(22vw);
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
+  height: 65%;
 }
 
 .four .project-summary,
 .five .project-summary,
 .six .project-summary {
-  transform: translateY(14vw);
-  background-color: rgba(0, 0, 0, 0);
-  transition: transform 1s, background-color 1s;
+  transform: translateY(12vw);
+  height: 80%;
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
 }
@@ -233,14 +242,20 @@ header {
 .four:hover .project-summary,
 .five:hover .project-summary,
 .six:hover .project-summary {
-  transform: translateY(3vw);
+  transform: translateY(2vw);
   background-color: #1a2236;
   color: white;
 }
 
+.projects h2 {
+  align-self: flex-start;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  background-color: #1a2236;
+}
+
 .one h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 4.1vw;
   font-weight: 700;
   white-space: nowrap;
@@ -275,7 +290,6 @@ header {
 
 .two h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
@@ -312,7 +326,6 @@ header {
 
 .three h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 3.5vw;
   font-weight: 700;
   white-space: nowrap;
@@ -351,7 +364,6 @@ header {
 .five h2,
 .six h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
