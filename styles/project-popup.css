@@ -71,23 +71,24 @@
 }
 
 .show-popup .two {
-  background-image: url(../images/project_thumbnail_2.svg);
+  background-image: url(../images/projects/leaderboard-thumbnail.png);
 }
 
 .show-popup .three {
-  background-image: url(../images/project_thumbnail_3.svg);
+  background-image: url(../images/projects/yugioh-thumbnail.png);
 }
 
 .show-popup .four {
-  background-image: url(../images/project_thumbnail_4.svg);
+  background-image: url(../images/projects/reservify-thumbnail.png);
+  background-position: left;
 }
 
 .show-popup .five {
-  background-image: url(../images/project_thumbnail_5.svg);
+  background-image: url(../images/projects/recipes-thumbnail.png);
 }
 
 .show-popup .six {
-  background-image: url(../images/project_thumbnail_6.svg);
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .show-popup p {
