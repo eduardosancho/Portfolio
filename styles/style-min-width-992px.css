@@ -45,7 +45,7 @@ header {
 .headline {
   background-image: none;
   flex-direction: row;
-  padding-bottom: 12vw;
+  padding-bottom: 50px;
 }
 
 .headline .left {
@@ -93,6 +93,7 @@ header {
 }
 
 .projects {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr 1fr 1fr;
   grid-template-rows: 37.4vw 4vw 8vw 6vw 6vw 12vw repeat(3, 6vw) 9vw 9vw;
@@ -159,14 +160,16 @@ header {
   grid-row: 10/12;
   grid-column: 6/9;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_4.svg);
+  background-image: url(../images/projects/reservify-thumbnail.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .five {
   grid-row: 5/7;
   grid-column: 7/10;
   overflow: hidden;
-  background-image: url(../images/project_thumbnail_5.svg);
+  background-image: url(../images/projects/recipes-thumbnail.png);
 }
 
 .six {
@@ -177,68 +180,85 @@ header {
   background-image: url(../images/projects/budget-thumbnail.png);
 }
 
-.one .project-summary {
-  transform: translateY(29vw);
+.see-project {
+  white-space: nowrap;
+}
+
+.see-project img {
+  width: 70%;
+}
+
+.project-summary {
   background-color: rgba(0, 0, 0, 0);
   transition: transform 1s, background-color 1s;
+}
+
+.one .project-summary {
+  transform: translateY(28vw);
   padding-bottom: 10vw;
+  height: 60%;
 }
 
 .two .project-summary {
-  transform: translateY(16vw);
-  background-color: rgba(0, 0, 0, 0);
-  transition: transform 1s, background-color 1s;
+  transform: translateY(15vw);
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
+  height: 65%;
 }
 
 .three .project-summary {
-  transform: translateY(24vw);
-  background-color: rgba(0, 0, 0, 0);
-  transition: transform 1s, background-color 1s;
+  transform: translateY(22vw);
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
+  height: 65%;
 }
 
 .four .project-summary,
 .five .project-summary,
 .six .project-summary {
-  transform: translateY(14vw);
-  background-color: rgba(0, 0, 0, 0);
-  transition: transform 1s, background-color 1s;
+  transform: translateY(12vw);
+  height: 80%;
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
 }
 
-.one:hover .project-summary {
-  transform: translateY(10vw);
+.one:hover .project-summary,
+.two:hover .project-summary,
+.three:hover .project-summary,
+.four:hover .project-summary,
+.five:hover .project-summary,
+.six:hover .project-summary {
   background-color: #1a2236;
   color: white;
+}
+
+.one:hover .project-summary {
+  transform: translateY(10vw);
 }
 
 .two:hover .project-summary {
   transform: translateY(4vw);
-  background-color: #1a2236;
-  color: white;
 }
 
 .three:hover .project-summary {
   transform: translateY(8vw);
-  background-color: #1a2236;
-  color: white;
 }
 
 .four:hover .project-summary,
 .five:hover .project-summary,
 .six:hover .project-summary {
-  transform: translateY(3vw);
+  transform: translateY(2vw);
+}
+
+.projects h2 {
+  align-self: flex-start;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   background-color: #1a2236;
-  color: white;
 }
 
 .one h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 4.1vw;
   font-weight: 700;
   white-space: nowrap;
@@ -273,7 +293,6 @@ header {
 
 .two h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
@@ -310,7 +329,6 @@ header {
 
 .three h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 3.5vw;
   font-weight: 700;
   white-space: nowrap;
@@ -349,7 +367,6 @@ header {
 .five h2,
 .six h2 {
   flex: 0;
-  background-color: #1a2236;
   font-size: 2vw;
   font-weight: 700;
   white-space: nowrap;
@@ -481,23 +498,21 @@ header {
 .skills {
   padding-left: 1vw;
   padding-top: 1vw;
+  margin: 0;
 }
 
 .languages {
   grid-column: 1/2;
-  margin: 0;
 }
 
 .frameworks {
   grid-row: 1/2;
   grid-column: 2/3;
-  margin: 0;
 }
 
 .skills {
   grid-row: 2/3;
   grid-column: 1/2;
-  margin: 0;
 }
 
 .dots-tile {
@@ -535,7 +550,7 @@ header {
   background-size: 20vw;
 }
 
-.top h1 {
+.contact-me .top h1 {
   font-size: 9vw;
   font-weight: 400;
 }

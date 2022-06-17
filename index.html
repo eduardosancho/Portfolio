@@ -15,11 +15,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Sancho Solano</title>
+  <link rel="shortcut icon" href="#">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/style-main.css">
+  <link rel="stylesheet" href="styles/project-popup.css">
   <link rel="stylesheet" media="screen and (min-width: 992px)" href="./styles/style-min-width-992px.css">
   <link rel="stylesheet" media="screen and (max-width: 991px)" href="styles/menu-style.css">
 </head>
@@ -51,8 +53,8 @@
           I can help you build a product, feature
           or website. Take a look at my work. <br>
           If you like what you see and have a
-          project you need coded, dont hesitate
-          and contact me.
+          project you need coded, don't hesitate
+          and let's talk.
         </p>
         <a id="start-collaboration" href="#contact-section">Start collaboration</a>
       </div>
@@ -68,15 +70,15 @@
         </div>
         <div class="project-summary">
           <h2>Stock Data App</h2>
-          <ul>
+          <ul class="technologies">
             <li>React</li>
             <li>Redux</li>
             <li>Bootstrap</li>
           </ul>
-          <a class="see-project" href="#" onclick='window.open("https://sad-edison-40e613.netlify.app/");return false;'>
+          <button class="see-project" onclick="displayProject(1)" type="button">
             See this project
             <img src="images/Union.png" alt="right-arrow">
-          </a>
+          </button>
         </div>
       </div>
 
@@ -85,15 +87,15 @@
         </div>
         <div class="project-summary">
           <h2>Leaderboard</h2>
-          <ul>
+          <ul class="technologies">
             <li>JavaScript</li>
             <li>Webpack</li>
             <li>HTML/CSS</li>
           </ul>
-          <a class="see-project" href="#" onclick='window.open("https://eduardosancho.github.io/Leaderboard/dist/index.html");return false;'>
+          <button class="see-project" onclick="displayProject(2)" type="button">
             See this project
             <img src="images/Union.png" alt="right-arrow">
-          </a>
+          </button>
         </div>
       </div>
 
@@ -102,16 +104,15 @@
         </div>
         <div class="project-summary">
           <h2>Yu-Gi-Oh! Card Data Base</h2>
-          <ul>
+          <ul class="technologies">
             <li>JavaScript</li>
             <li>Webpack</li>
             <li>Bootstrap</li>
           </ul>
-          <a class="see-project" href="#"
-            onclick='window.open("https://yothu.github.io/Yu-Gi-Oh--Card-Data-Base/dist/index.html");return false;'>
+          <button class="see-project" onclick="displayProject(3)" type="button">
             See this project
             <img src="images/Union.png" alt="right-arrow">
-          </a>
+          </button>
         </div>
       </div>
 
@@ -119,13 +120,13 @@
         <div class="thumbnail">
         </div>
         <div class="project-summary">
-          <h2>Project Four</h2>
-          <ul>
-            <li>HTML/CSS</li>
+          <h2>Reservify</h2>
+          <ul class="technologies">
             <li>Ruby on Rails</li>
-            <li>Javascript</li>
+            <li>React</li>
+            <li>Redux</li>
           </ul>
-          <button class="see-project" type="button">
+          <button class="see-project" onclick="displayProject(4)" type="button">
             See this project
             <img src="images/Union.png" alt="right-arrow">
           </button>
@@ -136,13 +137,13 @@
         <div class="thumbnail">
         </div>
         <div class="project-summary">
-          <h2>Project Five</h2>
-          <ul>
-            <li>HTML/CSS</li>
+          <h2>Recipes App</h2>
+          <ul class="technologies">
             <li>Ruby on Rails</li>
-            <li>Javascript</li>
+            <li>PostgreSQL</li>
+            <li>Bootstrap</li>
           </ul>
-          <button class="see-project" type="button">
+          <button class="see-project" onclick="displayProject(5)" type="button">
             See this project
             <img src="images/Union.png" alt="right-arrow">
           </button>
@@ -154,15 +155,15 @@
         </div>
         <div class="project-summary">
           <h2>Budget App</h2>
-          <ul>
+          <ul class="technologies">
             <li>Ruby on Rails</li>
-            <li>Bootstrap</li>
-            <li>PostgreSQL</li>
+            <li>AWS S3</li>
+            <li>SendGrid</li>
           </ul>
-          <a class="see-project" href="#" onclick='window.open("https://rocky-cliffs-67926.herokuapp.com/");return false;'>
+          <button class="see-project" onclick="displayProject(6)" type="button">
             See this project
             <img src="images/Union.png" alt="right-arrow">
-          </a>
+          </button>
         </div>
       </div>
 
@@ -176,10 +177,7 @@
       <div class="right">
         <h1>About</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ea eiusmod
+          I'm a strong believer that good ideas are worth nothing without action. ✔
         </p>
         <a href="#" onclick='window.open("pdf/EduardoSancho_FullStackDeveloper.pdf");return false;' id="get-my-cv">
           Get my CV
@@ -225,8 +223,8 @@
     <section class="contact-me" id="contact-section">
       <div class="contact-me-form">
         <div class="top">
-          <h1>Let's talk</h1>
-          <h4 class="joke">A joke to break the ice:</h4>
+          <h1>Let's talk!</h1>
+          <h3 class="joke">A joke to break the ice:</h3>
           <div id="form-description">
             <em><strong>Hardware</strong>(noun.)</em>
             <p>The part of a computer that you can kick.</p>
@@ -255,26 +253,28 @@
 
     <div class="end">
       <footer class="footer">
-        <a id="resume" href="https://www.linkedin.com/in/eduardo-sancho-solano/">Get my Resume
+        <a id="resume" href="#" 
+          onclick='window.open("pdf/EduardoSancho_FullStackDeveloper.pdf");return false;'>
+          Get my Resume
           <img src="images/ic-link_teal.svg" alt="new-page-icon">
         </a>
         <div class="social-networks">
-          <a href="https://stackoverflow.com/">
+          <a href="https://stackoverflow.com/users/17236619/eduardosancho">
             <img src="images/ic_stackoverflow.svg" alt="stackoverflow">
           </a>
           <a href="https://github.com/eduardosancho">
             <img src="images/ic_github.svg" alt="github">
           </a>
-          <a href="https://twitter.com/sanchitobless">
+          <a href="https://twitter.com/sanchitoblog">
             <img src="images/ic_twitter.svg" alt="twitter">
           </a>
-          <a href="https://www.linkedin.com/in/eduardo-sancho-043641181/">
+          <a href="https://www.linkedin.com/in/eduardo-sancho-solano/">
             <img src="images/ic_linkedin.svg" alt="linkedin">
           </a>
           <a href="https://medium.com/@eduardosanchosolano">
             <img src="images/ic_medium.svg" alt="medium">
           </a>
-          <a href="https://angel.co/u/eduardo-sancho-1">
+          <a href="https://angel.co/u/eduardosancho">
             <img src="images/ic_angellist.svg" alt="angelist">
           </a>
         </div>
@@ -283,6 +283,7 @@
   </main>
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/store-data.js"></script>
+  <script src="scripts/projects-modal.js"></script>
 </body>
 
 </html>
