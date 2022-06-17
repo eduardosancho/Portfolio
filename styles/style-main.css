@@ -459,6 +459,10 @@ textarea {
   margin-right: 16px;
 }
 
+#resume:hover {
+  text-decoration: underline;
+}
+
 #resume img {
   margin-left: 10px;
 }
