@@ -6,8 +6,6 @@
 * [Live Demo](https://eduardosancho.github.io/Portfolio/)
 * [GitHub Repo](https://github.com/eduardosancho/Portfolio)
 
-### Personal Portfolio based on [Template #5](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=67%3A553) of Figma.
-
 
 ![screenshot](images/screenshot.png)
 
@@ -64,7 +62,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used:
 - @sergiogval @Yothu @hendridg
-- Inspiration
+- Inspiration from [Template #5](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=67%3A553) of Figma.
 - etc
 
 ## 📝 License
