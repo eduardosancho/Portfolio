@@ -44,9 +44,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **eduardosancho**
+👤 **Eduardo Sancho**
 
-- GitHub: [@eduardosancho](https://github.com/eduardosancho)
+|Website|Link|
+|----|-----|
+|GitHub| [@eduardosancho](https://github.com/eduardosancho)|
 
 ## 🤝 Contributing
 
