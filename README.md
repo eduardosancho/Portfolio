@@ -36,10 +36,8 @@ https://eduardosancho.github.io/Portfolio/
 To get a local copy up and running follow these simple example steps.
 
 1. Type in your terminal `$ git clone https://github.com/eduardosancho/Portfolio.git` to clone this repo.
-2. Install the `Live Server` extension in VScode.
+2. Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VScode.
 3. Right-click on `index.html` and select `Open with Live Server`.
-
-
 
 
 ## Authors
