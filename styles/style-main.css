@@ -7,6 +7,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
+  height: 50px;
 }
 
 .navbar {
@@ -19,13 +20,15 @@ header {
 
 .toggleNav {
   padding: 20px;
-  background-color: white;
-  transition: background-color 2s, transform 1s;
+  background-color: #add8e6;
+  transition: background-color 0.5s;
+  border-radius: 35%;
+  position: fixed;
+  top: 0;
 }
 
 .toggleNav:hover {
-  background-color: gray;
-  transform: rotate(-180deg);
+  background-color: #4a98b3;
 }
 
 .navbar ul {
@@ -62,7 +65,7 @@ header {
 
 #author {
   font-family: 'Playfair Display', serif;
-  font-size: 50px;
+  font-size: 9vw;
   font-weight: 400;
   color: #1a2236;
   margin: 16px;
@@ -84,7 +87,7 @@ header {
 #bio {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 4vw;
   color: #1a2236;
   margin: 16px;
 }
@@ -94,22 +97,22 @@ header {
   background-color: #1a2236;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 4vw;
   font-weight: 500;
   width: auto;
   padding: 15px;
-  margin: 16px;
   border: solid white 3px;
   transition-property: background-color, color, border;
   transition-duration: 0.5s;
 }
 
+#start-collaboration {
+  margin: 16px;
+}
+
 #submit-form {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-bottom: 80px;
   width: 100%;
-  height: 60px;
   padding: 10px;
 }
 
@@ -120,13 +123,6 @@ header {
   border: solid #1a2236 3px;
 }
 
-#start-collaboration:active,
-#submit-form:active {
-  background-color: whitesmoke;
-  color: rgb(14, 14, 68);
-  border: solid #1a2236 3px;
-}
-
 .headline .right {
   display: none;
 }
@@ -134,7 +130,7 @@ header {
 .projects {
   margin-top: 20px;
   display: grid;
-  grid-template-rows: 99px repeat(6, 120vw);
+  grid-template-rows: 99px repeat(6, 114vw);
   grid-gap: 0;
 }
 
@@ -161,40 +157,36 @@ header {
 .thumbnail {
   height: 60vw;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  background-image: url(../images/project_thumbnail_1.svg);
-  transition-property: background-size;
-  transition-duration: 1s;
-}
-
-.thumbnail:hover {
-  background-size: 105%;
+  background-size: cover;
+  background-position: top;
+  background-image: url(../images/projects/stock-thumbnail.png);
 }
 
 .two .thumbnail {
-  background-image: url(../images/project_thumbnail_2.svg);
+  background-image: url(../images/projects/leaderboard-thumbnail.png);
 }
 
 .three .thumbnail {
-  background-image: url(../images/project_thumbnail_3.svg);
+  background-image: url(../images/projects/yugioh-thumbnail.png);
 }
 
 .four .thumbnail {
-  background-image: url(../images/project_thumbnail_4.svg);
+  background-image: url(../images/projects/reservify-thumbnail.png);
 }
 
 .five .thumbnail {
-  background-image: url(../images/project_thumbnail_5.svg);
+  background-image: url(../images/projects/recipes-thumbnail.png);
 }
 
 .six .thumbnail {
-  background-image: url(../images/project_thumbnail_6.svg);
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .project-summary {
+  height: 50vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   padding-inline-start: 4vw;
@@ -202,14 +194,12 @@ header {
 }
 
 .project-summary h2 {
-  flex: 1 1 100%;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 5vw;
   margin-bottom: 0;
+  line-height: 20px;
 }
 
 .project-summary ul {
-  flex: 1 1 100%;
   display: flex;
   justify-content: space-between;
   padding-inline-start: 0;
@@ -219,15 +209,19 @@ header {
 .project-summary li {
   list-style: none;
   text-align: center;
-  padding-top: 0.7em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   width: 28vw;
   white-space: nowrap;
   background-color: #98dede;
   font-size: 3.5vw;
+  font-weight: bold;
   color: #1a2236;
+  border-radius: 5px;
 }
 
 .see-project {
+  align-self: flex-start;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -236,8 +230,19 @@ header {
   border: solid white;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 3vw;
   font-weight: 500;
+  transition: background-color 0.5s;
+}
+
+.see-project img {
+  width: 3.5vw;
+}
+
+.see-project:hover {
+  background-color: whitesmoke;
+  color: #1a2236;
+  border: solid whitesmoke 3px;
 }
 
 #image-geometry-2,
@@ -262,7 +267,7 @@ header {
 .about p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 4vw;
   margin: 16px;
   margin-top: 4px;
 }
@@ -276,27 +281,10 @@ header {
   border: #1a2236;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 5vw;
   font-weight: 500;
-  padding: 2vw;
-  margin: 16px;
-}
-
-@keyframes pulsing {
-  from {
-    font-size: 16px;
-  }
-
-  to {
-    font-size: 20px;
-  }
-}
-
-#get-my-cv:hover {
-  animation-name: pulsing, pulsing-2;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  padding: 15px;
+  margin: 15px;
 }
 
 .knowledge {
@@ -339,18 +327,21 @@ header {
   background-image: url(../images/ic_languages_mob.png);
   grid-row: 1/2;
   background-color: #1c528a;
+  background-size: 30%;
 }
 
 .frameworks {
   background-image: url(../images/ic_framework.png);
   grid-row: 2/3;
   background-color: #e2505c;
+  background-size: 30%;
 }
 
 .skills {
   background-image: url(../images/ic_skills.png);
   grid-row: 3/4;
   background-color: #febf52;
+  background-size: 30%;
 }
 
 .dots-tile {
@@ -368,6 +359,9 @@ header {
 }
 
 .contact-me-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -377,6 +371,11 @@ header {
   font-size: 50px;
   font-weight: 400;
   margin-top: 106px;
+  margin-bottom: 0;
+}
+
+.joke {
+  margin-top: 5px;
 }
 
 .form {
@@ -473,6 +472,10 @@ textarea {
   text-decoration: none;
   margin-left: 16px;
   margin-right: 16px;
+}
+
+#resume:hover {
+  text-decoration: underline;
 }
 
 #resume img {
