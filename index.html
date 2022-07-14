@@ -221,7 +221,7 @@
     </section>
 
     <section class="contact-me" id="contact-section">
-      <div class="contact-me-form">
+      <div class="container">
         <div class="top">
           <h1>Let's talk!</h1>
           <h3 class="joke">A joke to break the ice:</h3>
@@ -230,27 +230,22 @@
             <p>The part of a computer that you can kick.</p>
           </div>
         </div>
-        <form class="form" action="https://formspree.io/f/xwkyewre" method="post">
-          <ul class="form-list">
-            <li id="form-name">
-              <label for="name">Your name</label>
-              <input onchange="storeData();" type="text" id="name" name="user_name" placeholder="John Doe"
-                maxlength="30" required>
-            </li>
-            <li id="form-email">
-              <label for="email">Your email</label>
-              <input onchange="storeData();" type="email" id="email" name="user_email" placeholder="abc@email.com"
-                required>
-            </li>
+        <form class="form" id="signup" action="https://formspree.io/f/xwkyewre" method="post">
+          <div id="form-name">
+            <label for="name">Your name</label>
+            <input onchange="storeData();" type="text" id="name" name="user_name" placeholder="John Doe">
+          </div>
+          <div id="form-email">
+            <label for="email">Your email</label>
+            <input onchange="storeData();" type="text" id="email" name="user_email" placeholder="abc@email.com">
+          </div>
+          <div id="form-message">
+            <label for="msg">Message</label>
+            <textarea onchange="storeData();" id="msg" name="message"
+              placeholder="Enter your message here..."></textarea>
+          </div>
+          <ul class="error-messages">
           </ul>
-          <label id="msg-label" for="msg">Message</label>
-          <textarea onchange="storeData();" id="msg" name="message" placeholder="Enter your message here..."
-            maxlength="500" required></textarea>
-            <div class="error-messages">
-                      <small class="small-1"></small>
-                      <small class="small-2"></small>
-                      <small class="small-3"></small>
-                    </div>
           <button type="submit" id="submit-form">Start collaboration</button>
         </form>
       </div>
@@ -258,8 +253,7 @@
 
     <div class="end">
       <footer class="footer">
-        <a id="resume" href="#" 
-          onclick='window.open("pdf/EduardoSancho_FullStackDeveloper.pdf");return false;'>
+        <a id="resume" href="#" onclick='window.open("pdf/EduardoSancho_FullStackDeveloper.pdf");return false;'>
           Get my Resume
           <img src="images/ic-link_teal.svg" alt="new-page-icon">
         </a>

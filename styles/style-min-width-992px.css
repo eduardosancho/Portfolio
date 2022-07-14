@@ -525,21 +525,18 @@ header {
   background-size: 15vw;
 }
 
-.contact-me {
+#contact-section {
   background-image: url(../images/image-geometry_7.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: auto;
+  background-size: 25%;
 }
 
-.contact-me-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#contact-section .container {
   margin: 0;
 }
 
-.contact-me .top {
+#contact-section .top {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -547,10 +544,10 @@ header {
   background-image: url(../images/image-geometry_6.svg);
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 20vw;
+  background-size: 25%;
 }
 
-.contact-me .top h1 {
+#contact-section .top h1 {
   font-size: 9vw;
   font-weight: 400;
 }
@@ -563,49 +560,49 @@ header {
 .form {
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   height: auto;
-  width: 50vw;
-  justify-content: center;
-  margin-top: 4vw;
-  margin-bottom: 20vw;
+  width: 70vw;
+  padding-top: 50px;
+  margin-bottom: 15px;
+  column-gap: 1vw;
 }
 
-.form-list {
-  gap: 20px;
-  margin-bottom: 10px;
+#form-name,
+#form-email,
+#form-message {
+  position: relative;
+  padding-left: 20px;
 }
 
 #form-name,
 #form-email {
-  flex: 1;
-  height: 60px;
-  margin: 0;
-  padding-left: 20px;
+  width: calc(((100% - 2vw) / 2) - 25px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#form-message {
+  width: 100%;
+  height: auto;
+  margin: 50px 0 20px 0;
 }
 
 label {
-  position: relative;
-  top: -3vw;
-  left: -20px;
-  font-size: 2vw;
+  position: absolute;
+  top: -35px;
+  font-size: 1.5em;
+  width: 300px;
 }
 
-input {
+input#email {
   position: relative;
-  top: -2vw;
-}
-
-#msg-label {
-  flex: 1;
-  align-self: flex-end;
-  visibility: visible;
-  top: 0;
   left: 0;
 }
 
 textarea {
-  padding-top: 20px;
-  height: 15vw;
+  height: 200px;
 }
 
 #submit-form {
