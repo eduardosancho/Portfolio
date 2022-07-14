@@ -61,6 +61,7 @@ header {
 .headline .left {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 #author {
@@ -319,7 +320,7 @@ header {
 }
 
 .knowledge h2 {
-  margin-bottom: 0;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 6.5vw;
   font-weight: 800;
@@ -430,10 +431,8 @@ textarea {
   transform: translate(10px);
 }
 
-#form-name input:focus,
-#form-email input:focus,
-#form-message textarea:focus {
-  outline: none;
+textarea {
+  height: 80%;
 }
 
 #form-name,
@@ -452,8 +451,10 @@ textarea {
   height: 200px;
 }
 
-textarea {
-  height: 80%;
+#form-name input:focus,
+#form-email input:focus,
+#form-message textarea:focus {
+  outline: none;
 }
 
 #form-name.success,
