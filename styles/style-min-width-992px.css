@@ -89,7 +89,7 @@ main {
 .headline .right {
   display: inline-block;
   height: 40vw;
-  width: 31.5vw;
+  width: 31vw;
   background-image: url(../images/image-geometry_1.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
