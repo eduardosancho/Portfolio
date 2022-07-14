@@ -2,8 +2,18 @@ header {
   background-image: none;
 }
 
+body {
+background: linear-gradient(110deg, #e35461 40%, #fec25a 60%);  
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+
 #hello-section {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .navbar {
@@ -51,7 +61,7 @@ header {
 .headline .left {
   display: flex;
   flex-direction: column;
-  flex: 1 1 45%;
+  flex: 1 1 35%;
   background-image: url(../images/image_dots.png);
   background-repeat: no-repeat;
   background-size: 12.5vw;
@@ -557,13 +567,13 @@ header {
   width: 50vw;
 }
 
-.form {
+#signup {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   height: auto;
   width: 70vw;
-  padding-top: 50px;
+  padding: 50px 0 90px 0;
   margin-bottom: 15px;
   column-gap: 1vw;
 }
@@ -603,6 +613,10 @@ input#email {
 
 textarea {
   height: 200px;
+}
+
+.error-messages {
+  width: 100%;
 }
 
 #submit-form {

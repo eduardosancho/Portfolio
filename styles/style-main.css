@@ -471,8 +471,7 @@ textarea {
   color: #92dcdc;
   font-size: 16px;
   text-decoration: none;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 32px;
 }
 
 #resume:hover {
