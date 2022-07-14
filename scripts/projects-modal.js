@@ -101,47 +101,49 @@ projectSixSeeLiveSource.innerHTML = `
 
 // eslint-disable-next-line no-unused-vars
 function displayProject(num) {
-  projectPopUp.style.top = '0';
-  projectPopUp.appendChild(popUpTop);
-  projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
-  projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
-  projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
-  switch (num) {
-    case 1:
-      projectPopUp.querySelector('.thumbnail').classList.add('one');
-      projectPopUp.appendChild(projectOneDescription);
-      projectPopUp.appendChild(projectOneSeeLiveSource);
-      break;
-    case 2:
-      projectPopUp.querySelector('.thumbnail').classList.add('two');
-      projectPopUp.appendChild(projectTwoDescription);
-      projectPopUp.appendChild(projectTwoSeeLiveSource);
-      break;
-    case 3:
-      projectPopUp.querySelector('.thumbnail').classList.add('three');
-      projectPopUp.appendChild(projectThreeDescription);
-      projectPopUp.appendChild(projectThreeSeeLiveSource);
-      break;
-    case 4:
-      projectPopUp.querySelector('.thumbnail').classList.add('four');
-      projectPopUp.appendChild(projectFourDescription);
-      projectPopUp.appendChild(projectFourSeeLiveSource);
-      break;
-    case 5:
-      projectPopUp.querySelector('.thumbnail').classList.add('five');
-      projectPopUp.appendChild(projectFiveDescription);
-      projectPopUp.appendChild(projectFiveSeeLiveSource);
-      break;
-    case 6:
-      projectPopUp.querySelector('.thumbnail').classList.add('six');
-      projectPopUp.appendChild(projectSixDescription);
-      projectPopUp.appendChild(projectSixSeeLiveSource);
-      break;
-    default:
-      break;
+  if (projectPopUp.innerHTML == '') {
+    projectPopUp.style.top = '0';
+    projectPopUp.appendChild(popUpTop);
+    projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
+    projectPopUp.appendChild(projectList[num].technologies.cloneNode(true));
+    projectPopUp.appendChild(projectList[num].thumbnail.cloneNode(true));
+    switch (num) {
+      case 1:
+        projectPopUp.querySelector('.thumbnail').classList.add('one');
+        projectPopUp.appendChild(projectOneDescription);
+        projectPopUp.appendChild(projectOneSeeLiveSource);
+        break;
+      case 2:
+        projectPopUp.querySelector('.thumbnail').classList.add('two');
+        projectPopUp.appendChild(projectTwoDescription);
+        projectPopUp.appendChild(projectTwoSeeLiveSource);
+        break;
+      case 3:
+        projectPopUp.querySelector('.thumbnail').classList.add('three');
+        projectPopUp.appendChild(projectThreeDescription);
+        projectPopUp.appendChild(projectThreeSeeLiveSource);
+        break;
+      case 4:
+        projectPopUp.querySelector('.thumbnail').classList.add('four');
+        projectPopUp.appendChild(projectFourDescription);
+        projectPopUp.appendChild(projectFourSeeLiveSource);
+        break;
+      case 5:
+        projectPopUp.querySelector('.thumbnail').classList.add('five');
+        projectPopUp.appendChild(projectFiveDescription);
+        projectPopUp.appendChild(projectFiveSeeLiveSource);
+        break;
+      case 6:
+        projectPopUp.querySelector('.thumbnail').classList.add('six');
+        projectPopUp.appendChild(projectSixDescription);
+        projectPopUp.appendChild(projectSixSeeLiveSource);
+        break;
+      default:
+        break;
+    }
   }
   function closePopup() {
-    projectPopUp.style.top = '-100%';
+    projectPopUp.style.top = '-120%';
     setTimeout(() => {
       if (document.querySelector('.show-popup').textContent !== '') {
         document.querySelector('.show-popup > .popUpTop').removeChild(document.querySelector('.popUpTop > h2'));
