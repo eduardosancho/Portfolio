@@ -204,16 +204,16 @@ main {
 }
 
 .one .project-summary {
-  transform: translateY(28vw);
+  transform: translateY(27vw);
   padding-bottom: 10vw;
-  height: 60%;
+  height: 65%;
 }
 
 .two .project-summary {
-  transform: translateY(15vw);
+  transform: translateY(14vw);
   padding-bottom: 5vw;
   padding-inline-start: 2vw;
-  height: 65%;
+  height: 70%;
 }
 
 .three .project-summary {
@@ -339,7 +339,7 @@ main {
 
 .three h2 {
   flex: 0;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 700;
   white-space: nowrap;
   padding-left: 1vw;
