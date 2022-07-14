@@ -101,7 +101,7 @@ projectSixSeeLiveSource.innerHTML = `
 
 // eslint-disable-next-line no-unused-vars
 function displayProject(num) {
-  if (projectPopUp.innerHTML == '') {
+  if (projectPopUp.innerHTML === '') {
     projectPopUp.style.top = '0';
     projectPopUp.appendChild(popUpTop);
     projectPopUp.querySelector('div').appendChild(projectList[num].title.cloneNode(true));
