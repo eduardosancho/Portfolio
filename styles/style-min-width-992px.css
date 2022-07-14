@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 80%;
   margin: auto;
   background-color: white;
 }
@@ -59,39 +59,37 @@ main {
 }
 
 .headline .left {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 35%;
+  width: 45.5vw;
+  justify-content: center;
   background-image: url(../images/image_dots.png);
   background-repeat: no-repeat;
-  background-size: 12.5vw;
+  background-size: 10vw;
   background-position: right bottom;
-  padding-left: 5%;
-  padding-bottom: 15vw;
+  padding-left: 3%;
 }
 
 #author {
-  font-size: 6vw;
-  flex: 1;
+  font-size: 4vw;
+  height: 200px;
 }
 
 #bio {
-  flex: 1;
-  font-size: 1.6vw;
-  padding-right: 5vw;
+  font-size: 1.75vw;
+  padding: 0 1.5vw 2vw 0;
+  margin: 0 0 2vw 16px;
 }
 
 #start-collaboration {
-  width: 25vw;
-  font-size: 2vw;
+  width: 20vw;
+  font-size: 1.7vw;
   padding: 1.5vw;
   text-align: center;
 }
 
 .headline .right {
-  display: initial;
-  height: 61.72vw;
-  flex: 1 1 50%;
+  display: inline-block;
+  height: 40vw;
+  width: 32vw;
   background-image: url(../images/image-geometry_1.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -339,7 +337,7 @@ main {
 
 .three h2 {
   flex: 0;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 700;
   white-space: nowrap;
   padding-left: 1vw;
@@ -500,9 +498,8 @@ main {
 }
 
 .knowledge h2 {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 800;
-  margin-top: 1.5vw;
 }
 
 .knowledge ul {
