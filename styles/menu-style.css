@@ -20,13 +20,17 @@
   transition: top 1s ease-in-out;
 }
 
+.navbar .menu .close img {
+  height: 30px;
+}
+
 .navbar .menu .close {
   position: absolute;
   top: 0;
   right: 0;
   padding: 25px;
   margin: 25px;
-  height: 16px;
+  height: 30px;
   border-radius: 50%;
   transition: background-color 0.5s;
 }

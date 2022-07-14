@@ -4,42 +4,44 @@
   align-items: flex-start;
   background-color: white;
   color: #1a2236;
-  width: 100vw;
-  height: 100vh;
+  border: none;
+  width: 95vw;
+  max-height: 100vh;
   position: fixed;
   z-index: 10;
-  top: -100%;
+  top: -120%;
   overflow-y: scroll !important;
-  max-height: 100vh;
   font-family: 'Poppins', sans-serif;
   font-size: 6vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding: 0 2.5vw;
   transition: top 1s ease-in-out;
 }
 
 .show-popup .popUpTop {
   display: flex;
-  flex-direction: row-reverse;
-  width: 95vw;
+  width: 100%;
   justify-content: space-between;
+  height: min-content;
 }
 
 .show-popup h2 {
-  margin-bottom: 0.5rem;
+  padding-top: 50px;
+  margin: 0;
+  font-size: 0.8em;
 }
 
 .close-project {
-  align-self: flex-start;
+  position: absolute;
+  right: 0;
   height: 30px;
-  margin: 25px;
+  margin: 5px 2.5vw 0 0;
   padding: 25px;
   border-radius: 50%;
   transition: background-color 0.5s;
 }
 
 .close-project:hover {
-  background-color: antiquewhite;
+  background-color: #e35461;
 }
 
 .show-popup .technologies {
@@ -48,7 +50,7 @@
   padding-inline-start: 0;
   justify-content: space-between;
   height: 10vw;
-  width: 85vw;
+  width: 75vw;
   font-weight: 300;
 }
 
@@ -59,15 +61,16 @@
   padding-bottom: 0.7em;
   white-space: nowrap;
   border: solid black 1px;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #1a2236;
-  width: 25vw;
+  width: 22.5vw;
 }
 
 .show-popup .thumbnail {
-  width: 88vw;
-  min-height: 53vw;
+  width: 100%;
+  min-height: 60vw;
   box-shadow: 0 0 50px 5px black inset;
+  align-self: center;
 }
 
 .show-popup .two {
@@ -100,10 +103,8 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin: 0;
-  margin-bottom: 7vw;
+  margin-bottom: 10px;
   gap: 10px;
-  padding-right: 12vw;
 }
 
 .show-popup button {
@@ -139,24 +140,43 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .show-popup {
+    width: 89.1vw;
+    height: 93.2vh;
+    align-items: center;
+    border: solid 3vw #1a2236;
+  }
+
+  .show-popup .popUpTop {
+    justify-content: center;
+  }
+
+  .show-popup .popUpTop .close-project {
+    z-index: 1;
+  }
+
   .show-popup h2 {
-    font-size: 4vw;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.5em;
   }
 
   .show-popup .technologies {
-    width: 40vw;
+    width: 50vw;
     height: 7vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin: 0.5vw 0;
   }
 
   .show-popup .technologies li {
     font-size: 0.9rem;
-    width: 12vw;
+    width: 15vw;
   }
 
   .show-popup .thumbnail {
     display: initial;
+    width: calc(40vw * 1.1);
+    min-height: 30vw;
   }
 
   .show-popup .projectSee {
@@ -169,8 +189,9 @@
   }
 
   .show-popup p {
-    max-width: 70vw;
-    font-size: 3vw;
-    margin: 5rem 2rem 5rem 8vw;
+    max-width: 60vw;
+    font-size: 1.5vw;
+    align-self: center;
+    margin: 2rem 2rem;
   }
 }
