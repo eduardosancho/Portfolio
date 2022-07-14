@@ -6,6 +6,7 @@
   color: #1a2236;
   border: none;
   width: 95vw;
+  height: 100vh;
   max-height: 100vh;
   position: fixed;
   z-index: 10;
