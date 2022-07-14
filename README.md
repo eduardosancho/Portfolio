@@ -6,8 +6,6 @@
 * [Live Demo](https://eduardosancho.github.io/Portfolio/)
 * [GitHub Repo](https://github.com/eduardosancho/Portfolio)
 
-### Personal Portfolio based on [Template #5](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=67%3A553) of Figma.
-
 
 ![screenshot](images/screenshot.png)
 
@@ -38,17 +36,17 @@ https://eduardosancho.github.io/Portfolio/
 To get a local copy up and running follow these simple example steps.
 
 1. Type in your terminal `$ git clone https://github.com/eduardosancho/Portfolio.git` to clone this repo.
-2. Install the `Live Server` extension in VScode.
+2. Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VScode.
 3. Right-click on `index.html` and select `Open with Live Server`.
-
-
 
 
 ## Authors
 
-👤 **eduardosancho**
+👤 **Eduardo Sancho**
 
-- GitHub: [@eduardosancho](https://github.com/eduardosancho)
+|Website|Link|
+|----|-----|
+|GitHub| [@eduardosancho](https://github.com/eduardosancho)|
 
 ## 🤝 Contributing
 
@@ -64,7 +62,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used:
 - @sergiogval @Yothu @hendridg
-- Inspiration
+- Inspiration from [Template #5](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=67%3A553) of Figma.
 - etc
 
 ## 📝 License

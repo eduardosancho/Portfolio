@@ -130,6 +130,10 @@
   height: 4vw;
 }
 
+.show-popup button:hover img {
+  filter: invert(100%);
+}
+
 .show-popup button p {
   margin: 0.5rem;
 }

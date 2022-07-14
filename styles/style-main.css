@@ -111,13 +111,31 @@ header {
 }
 
 #submit-form {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   width: 100%;
   padding: 10px;
 }
 
+#get-my-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #1a2236;
+  border: solid white 3px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw;
+  font-weight: 500;
+  padding: 15px;
+  margin: 15px;
+  transition-property: background-color, color, border;
+  transition-duration: 0.5s;
+}
+
 #start-collaboration:hover,
-#submit-form:hover {
+#submit-form:hover,
+#get-my-cv:hover {
   background-color: whitesmoke;
   color: #1a2236;
   border: solid #1a2236 3px;
@@ -239,6 +257,10 @@ header {
   width: 3.5vw;
 }
 
+.see-project:hover img {
+  filter: brightness(0);
+}
+
 .see-project:hover {
   background-color: whitesmoke;
   color: #1a2236;
@@ -257,6 +279,10 @@ header {
   flex-direction: column;
 }
 
+.about .right {
+  padding: 0 50px;
+}
+
 .about h1 {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
@@ -272,19 +298,16 @@ header {
   margin-top: 4px;
 }
 
-#get-my-cv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: #1a2236;
-  border: #1a2236;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 5vw;
-  font-weight: 500;
-  padding: 15px;
-  margin: 15px;
+#resume img {
+  margin-left: 10px;
+}
+
+#get-my-cv img {
+  width: 5vw;
+}
+
+#get-my-cv:hover img {
+  filter: brightness(0);
 }
 
 .knowledge {
@@ -351,14 +374,13 @@ header {
 .contact-me {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   background-image: url(../images/mobile_geometry_1.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: auto;
 }
 
-.contact-me-form {
+.contact-me .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -366,7 +388,7 @@ header {
   margin-right: 16px;
 }
 
-.contact-me-form h1 {
+.contact-me .container h1 {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 400;
@@ -381,15 +403,7 @@ header {
 .form {
   display: flex;
   flex-direction: column;
-  height: 400px;
-}
-
-.form-list {
-  flex: 1 1 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 0;
-  padding-inline-start: 0;
+  width: 80%;
 }
 
 label {
@@ -398,9 +412,11 @@ label {
   font-size: 10px;
 }
 
-input {
+input,
+textarea {
   display: block;
   border: none;
+  width: 95%;
 }
 
 #form-description {
@@ -414,31 +430,54 @@ input {
   transform: translate(10px);
 }
 
+#form-name input:focus,
+#form-email input:focus,
+#form-message input:focus {
+  outline: none;
+}
+
 #form-name,
-#form-email {
-  flex: 1 1 100%;
-  list-style: none;
+#form-email,
+#form-message {
   border: 1px solid #dfdfe0;
   outline: #1a2236;
   border-radius: 5px;
   height: 52px;
   margin-bottom: 8px;
-  padding-left: 20px;
+  padding: 5px;
+  padding-left: 5%;
 }
 
-#msg-label {
-  visibility: hidden;
+#form-message {
+  height: 200px;
 }
 
 textarea {
-  flex: 1 1 100%;
-  list-style: none;
-  padding: 20px;
-  padding-top: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #dfdfe0;
-  outline: #1a2236;
-  border-radius: 5px;
+  height: 80%;
+}
+
+#form-name.success,
+#form-email.success,
+#form-message.success {
+  border: solid lightgreen 1px;
+}
+
+#form-name.error,
+#form-email.error,
+#form-message.error {
+  border: solid red 1px;
+}
+
+.error-messages {
+  display: none;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 30px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .footer {
@@ -455,16 +494,11 @@ textarea {
   color: #92dcdc;
   font-size: 16px;
   text-decoration: none;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 32px;
 }
 
 #resume:hover {
   text-decoration: underline;
-}
-
-#resume img {
-  margin-left: 10px;
 }
 
 .footer a {
