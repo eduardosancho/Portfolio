@@ -7,6 +7,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
+  height: 50px;
 }
 
 .navbar {
@@ -18,14 +19,17 @@ header {
 }
 
 .toggleNav {
+  width: 50px;
   padding: 20px;
-  background-color: white;
-  transition: background-color 2s, transform 1s;
+  background-color: #add8e6;
+  transition: background-color 0.5s;
+  border-radius: 0 0 0 10%;
+  position: fixed;
+  top: 0;
 }
 
 .toggleNav:hover {
-  background-color: gray;
-  transform: rotate(-180deg);
+  background-color: #4a98b3;
 }
 
 .navbar ul {
@@ -58,11 +62,12 @@ header {
 .headline .left {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 #author {
   font-family: 'Playfair Display', serif;
-  font-size: 50px;
+  font-size: 9vw;
   font-weight: 400;
   color: #1a2236;
   margin: 16px;
@@ -84,7 +89,7 @@ header {
 #bio {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 4vw;
   color: #1a2236;
   margin: 16px;
 }
@@ -94,36 +99,47 @@ header {
   background-color: #1a2236;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 4vw;
   font-weight: 500;
   width: auto;
   padding: 15px;
-  margin: 16px;
   border: solid white 3px;
   transition-property: background-color, color, border;
   transition-duration: 0.5s;
 }
 
+#start-collaboration {
+  margin: 16px;
+}
+
 #submit-form {
-  margin-top: 0;
-  margin-bottom: 80px;
-  margin-left: 0;
+  margin-bottom: 50px;
   width: 100%;
-  height: 60px;
   padding: 10px;
 }
 
-#start-collaboration:hover,
-#submit-form:hover {
-  background-color: whitesmoke;
-  color: #1a2236;
-  border: solid #1a2236 3px;
+#get-my-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #1a2236;
+  border: solid white 3px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw;
+  font-weight: 500;
+  padding: 15px;
+  margin: 15px;
+  transition-property: background-color, color, border;
+  transition-duration: 0.5s;
 }
 
-#start-collaboration:active,
-#submit-form:active {
+#start-collaboration:hover,
+#submit-form:hover,
+#get-my-cv:hover {
   background-color: whitesmoke;
-  color: rgb(14, 14, 68);
+  color: #1a2236;
   border: solid #1a2236 3px;
 }
 
@@ -134,7 +150,7 @@ header {
 .projects {
   margin-top: 20px;
   display: grid;
-  grid-template-rows: 99px repeat(6, 120vw);
+  grid-template-rows: 99px repeat(6, 114vw);
   grid-gap: 0;
 }
 
@@ -161,34 +177,36 @@ header {
 .thumbnail {
   height: 60vw;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
   background-image: url(../images/projects/stock-thumbnail.png);
 }
 
 .two .thumbnail {
-  background-image: url(../images/project_thumbnail_2.svg);
+  background-image: url(../images/projects/leaderboard-thumbnail.png);
 }
 
 .three .thumbnail {
-  background-image: url(../images/project_thumbnail_3.svg);
+  background-image: url(../images/projects/yugioh-thumbnail.png);
 }
 
 .four .thumbnail {
-  background-image: url(../images/project_thumbnail_4.svg);
+  background-image: url(../images/projects/reservify-thumbnail.png);
 }
 
 .five .thumbnail {
-  background-image: url(../images/project_thumbnail_5.svg);
+  background-image: url(../images/projects/recipes-thumbnail.png);
 }
 
 .six .thumbnail {
-  background-image: url(../images/project_thumbnail_6.svg);
+  background-image: url(../images/projects/budget-thumbnail.png);
 }
 
 .project-summary {
+  height: 50vw;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   padding-inline-start: 4vw;
@@ -196,14 +214,12 @@ header {
 }
 
 .project-summary h2 {
-  flex: 1 1 100%;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 5vw;
   margin-bottom: 0;
+  line-height: 20px;
 }
 
 .project-summary ul {
-  flex: 1 1 100%;
   display: flex;
   justify-content: space-between;
   padding-inline-start: 0;
@@ -213,7 +229,8 @@ header {
 .project-summary li {
   list-style: none;
   text-align: center;
-  padding-top: 0.7em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   width: 28vw;
   white-space: nowrap;
   background-color: #98dede;
@@ -224,6 +241,7 @@ header {
 }
 
 .see-project {
+  align-self: flex-start;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -232,8 +250,23 @@ header {
   border: solid white;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 3vw;
   font-weight: 500;
+  transition: background-color 0.5s;
+}
+
+.see-project img {
+  width: 3.5vw;
+}
+
+.see-project:hover img {
+  filter: brightness(0);
+}
+
+.see-project:hover {
+  background-color: whitesmoke;
+  color: #1a2236;
+  border: solid whitesmoke 3px;
 }
 
 #image-geometry-2,
@@ -248,6 +281,10 @@ header {
   flex-direction: column;
 }
 
+.about .right {
+  padding: 0 50px;
+}
+
 .about h1 {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
@@ -258,24 +295,21 @@ header {
 .about p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 4vw;
   margin: 16px;
   margin-top: 4px;
 }
 
-#get-my-cv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: #1a2236;
-  border: #1a2236;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 15px;
-  margin: 15px;
+#resume img {
+  margin-left: 10px;
+}
+
+#get-my-cv img {
+  width: 5vw;
+}
+
+#get-my-cv:hover img {
+  filter: brightness(0);
 }
 
 .knowledge {
@@ -287,7 +321,7 @@ header {
 }
 
 .knowledge h2 {
-  margin-bottom: 0;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 6.5vw;
   font-weight: 800;
@@ -318,18 +352,21 @@ header {
   background-image: url(../images/ic_languages_mob.png);
   grid-row: 1/2;
   background-color: #1c528a;
+  background-size: 30%;
 }
 
 .frameworks {
   background-image: url(../images/ic_framework.png);
   grid-row: 2/3;
   background-color: #e2505c;
+  background-size: 30%;
 }
 
 .skills {
   background-image: url(../images/ic_skills.png);
   grid-row: 3/4;
   background-color: #febf52;
+  background-size: 30%;
 }
 
 .dots-tile {
@@ -339,19 +376,21 @@ header {
 .contact-me {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   background-image: url(../images/mobile_geometry_1.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: auto;
 }
 
-.contact-me-form {
+.contact-me .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 16px;
   margin-right: 16px;
 }
 
-.contact-me-form h1 {
+.contact-me .container h1 {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   font-weight: 400;
@@ -366,15 +405,7 @@ header {
 .form {
   display: flex;
   flex-direction: column;
-  height: 400px;
-}
-
-.form-list {
-  flex: 1 1 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 0;
-  padding-inline-start: 0;
+  width: 80%;
 }
 
 label {
@@ -383,9 +414,11 @@ label {
   font-size: 10px;
 }
 
-input {
+input,
+textarea {
   display: block;
   border: none;
+  width: 95%;
 }
 
 #form-description {
@@ -399,31 +432,54 @@ input {
   transform: translate(10px);
 }
 
+textarea {
+  height: 80%;
+}
+
 #form-name,
-#form-email {
-  flex: 1 1 100%;
-  list-style: none;
+#form-email,
+#form-message {
   border: 1px solid #dfdfe0;
   outline: #1a2236;
   border-radius: 5px;
   height: 52px;
   margin-bottom: 8px;
-  padding-left: 20px;
+  padding: 5px;
+  padding-left: 5%;
 }
 
-#msg-label {
-  visibility: hidden;
+#form-message {
+  height: 200px;
 }
 
-textarea {
-  flex: 1 1 100%;
-  list-style: none;
-  padding: 20px;
-  padding-top: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #dfdfe0;
-  outline: #1a2236;
-  border-radius: 5px;
+#form-name input:focus,
+#form-email input:focus,
+#form-message textarea:focus {
+  outline: none;
+}
+
+#form-name.success,
+#form-email.success,
+#form-message.success {
+  border: solid lightgreen 1px;
+}
+
+#form-name.error,
+#form-email.error,
+#form-message.error {
+  border: solid red 1px;
+}
+
+.error-messages {
+  display: none;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 30px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .footer {
@@ -440,12 +496,11 @@ textarea {
   color: #92dcdc;
   font-size: 16px;
   text-decoration: none;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0 32px;
 }
 
-#resume img {
-  margin-left: 10px;
+#resume:hover {
+  text-decoration: underline;
 }
 
 .footer a {
