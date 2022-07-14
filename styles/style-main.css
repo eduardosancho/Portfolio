@@ -116,6 +116,23 @@ header {
   padding: 10px;
 }
 
+#get-my-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #1a2236;
+  border: solid white 3px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw;
+  font-weight: 500;
+  padding: 15px;
+  margin: 15px;
+  transition-property: background-color, color, border;
+  transition-duration: 0.5s;
+}
+
 #start-collaboration:hover,
 #submit-form:hover,
 #get-my-cv:hover {
@@ -236,12 +253,12 @@ header {
   transition: background-color 0.5s;
 }
 
-.see-project:hover img {
-  filter: brightness(0);
-}
-
 .see-project img {
   width: 3.5vw;
+}
+
+.see-project:hover img {
+  filter: brightness(0);
 }
 
 .see-project:hover {
@@ -261,6 +278,7 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .about .right {
   padding: 0 50px;
 }
@@ -280,22 +298,10 @@ header {
   margin-top: 4px;
 }
 
-#get-my-cv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: #1a2236;
-  border: solid white 3px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 5vw;
-  font-weight: 500;
-  padding: 15px;
-  margin: 15px;
-  transition-property: background-color, color, border;
-  transition-duration: 0.5s;
+#resume img {
+  margin-left: 10px;
 }
+
 #get-my-cv img {
   width: 5vw;
 }
@@ -493,10 +499,6 @@ textarea {
 
 #resume:hover {
   text-decoration: underline;
-}
-
-#resume img {
-  margin-left: 10px;
 }
 
 .footer a {

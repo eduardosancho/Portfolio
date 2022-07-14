@@ -3,7 +3,7 @@ header {
 }
 
 body {
-background: linear-gradient(110deg, #e35461 40%, #fec25a 60%);  
+  background: linear-gradient(110deg, #e35461 40%, #fec25a 60%);
 }
 
 main {
@@ -483,6 +483,10 @@ main {
   padding: 1vw;
 }
 
+.social-networks img {
+  width: 2vw;
+}
+
 #get-my-cv img {
   width: 2vw;
 }
@@ -643,10 +647,6 @@ textarea {
   flex: 1 1 20%;
   justify-content: flex-end;
   gap: 3vw;
-}
-
-.social-networks img {
-  width: 2vw;
 }
 
 #resume {

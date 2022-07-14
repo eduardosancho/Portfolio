@@ -62,7 +62,7 @@ form.addEventListener('submit', function validateInputs(event) {
   const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID,
     EMAIL_HASCAPITALS);
   const msgValid = hasValue(form.elements.msg, MSG_INVALID);
-  
+
   if (nameValid && emailValid && msgValid) {
     this.submit();
   }

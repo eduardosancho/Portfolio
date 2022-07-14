@@ -119,10 +119,6 @@
   transition: background-color 0.5s;
 }
 
-.show-popup button:hover img {
-  filter: invert(100%);
-}
-
 .show-popup button:hover {
   background-color: #1a2236;
   color: whitesmoke;
@@ -132,6 +128,10 @@
 .show-popup button img {
   margin: 0.5rem;
   height: 4vw;
+}
+
+.show-popup button:hover img {
+  filter: invert(100%);
 }
 
 .show-popup button p {
