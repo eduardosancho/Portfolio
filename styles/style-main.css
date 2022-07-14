@@ -432,7 +432,7 @@ textarea {
 
 #form-name input:focus,
 #form-email input:focus,
-#form-message input:focus {
+#form-message textarea:focus {
   outline: none;
 }
 
