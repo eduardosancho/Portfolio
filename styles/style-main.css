@@ -236,6 +236,10 @@ header {
   transition: background-color 0.5s;
 }
 
+.see-project:hover img {
+  filter: brightness(0);
+}
+
 .see-project img {
   width: 3.5vw;
 }
@@ -256,6 +260,9 @@ header {
 .about {
   display: flex;
   flex-direction: column;
+}
+.about .right {
+  padding: 0 50px;
 }
 
 .about h1 {
@@ -288,6 +295,13 @@ header {
   margin: 15px;
   transition-property: background-color, color, border;
   transition-duration: 0.5s;
+}
+#get-my-cv img {
+  width: 5vw;
+}
+
+#get-my-cv:hover img {
+  filter: brightness(0);
 }
 
 .knowledge {
